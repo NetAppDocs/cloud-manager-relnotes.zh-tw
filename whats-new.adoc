@@ -767,6 +767,18 @@ Global File Cache軟體安裝程式現在可將所有GFC程序排除在Windows D
 
 
 
+=== 2022年5月8日
+
+
+
+==== 拖放以新增儲存類別
+
+您現在可以將Kubernetes叢集拖放到Cloud Volumes ONTAP 運作環境中、直接從Canvas.新增儲存類別。
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["新增儲存類別"]
+
+
+
 === 2022年4月4日
 
 
@@ -795,18 +807,6 @@ Kubernetes叢集管理現在已直接從叢集工作環境增強整合功能。�
 您現在可以使用Cloud Manager、在Google Cloud中新增及管理託管的Google Kubernetes Engine（GKE）叢集和自我管理的Kubernetes叢集。
 
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["瞭解如何在Google Cloud中開始使用Kubernetes叢集"]。
-
-
-
-=== 2022年1月11日
-
-
-
-==== 支援Azure中的Kubernetes叢集
-
-您現在可以使用Cloud Manager、在Azure中新增及管理託管Azure Kubernetes叢集（KS）和自我管理的Kubernetes叢集。
-
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure中的Kubernetes叢集入門"]
 
 
 
