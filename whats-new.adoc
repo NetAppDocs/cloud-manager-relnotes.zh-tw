@@ -767,7 +767,7 @@ Global File Cache軟體安裝程式現在可將所有GFC程序排除在Windows D
 
 
 
-=== 2022年5月8日
+=== 2022年5月4日
 
 
 
