@@ -183,7 +183,6 @@
   <block id="b7415479c879eb3f5804ebd25ea733e7" category="paragraph"><block ref="b7415479c879eb3f5804ebd25ea733e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="92d2b6aba6afa3f690540cf3dba9b633" category="section-title">雲端分層</block>
   <block id="6cb8333618f00b139da255e7f5a82ea0" category="section-title">Amazon S3 Glacier立即擷取儲存類別現已推出</block>
-  <block id="073223fc83a8b7f1f274f1af1f635f2f" category="paragraph">設定雲端分層時、現在您可以設定生命週期規則、讓非使用中的資料在特定天數後從_Standard_儲存類別轉換為_Glacier即時擷取。這將有助於降低AWS基礎架構成本。</block>
   <block id="199090bb5d58df554b18a5cb68acb0b7" category="section-title">Cloud Tiering已完全符合ONTAP Select 資格、可在不同步系統上執行</block>
   <block id="a74220a8acc78d1041352afb305af18f" category="paragraph">除了將資料從AFF 您的功能區和FAS 功能區系統分層、現在您可以將非作用中的資料從ONTAP Select 您的功能區系統分層處理至雲端儲存設備。</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021年9月2日</block>
@@ -194,9 +193,6 @@
   <block id="24263383a842093a8c2b6b9b8a88989d" category="section-title">將非作用中資料從內部ONTAP 的支援叢集分成S3相容的物件儲存設備</block>
   <block id="59e10c49329cd1a0a55e4a0d27f6a584" category="inline-link">瞭解如何將資料分層至S3相容的物件儲存設備</block>
   <block id="df94b79ab63138be1c03382ae20c338d" category="paragraph">現在、您可以將非作用中資料分層至任何使用簡易儲存服務（S3）傳輸協定的物件儲存服務。<block ref="26932bf166134e05b1ade0d7ecb1b6d8" category="inline-link-rx"></block>。</block>
-  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021年7月7日</block>
-  <block id="154176674c0672732a91f2bd7ca5d8e0" category="section-title">將資料分層至Azure Blob儲存設備時、連接器可在內部環境中執行</block>
-  <block id="def40345e2d3c9101a49141b1956c58d" category="paragraph">您不再需要使用安裝在Azure vnet中的Connector。將資料分層存放至Azure Blob儲存設備時、連接器可在內部部署的主機上執行。</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="section-title">Cloud Volumes ONTAP</block>
   <block id="e76164b285bb635d604e86db0ddefffb" category="paragraph">以下是3.9.18版Connector所做的變更。</block>
   <block id="44521137c9499dbef6a006058d0d9127" category="section-title">版本9.11.0 Cloud Volumes ONTAP</block>
@@ -400,4 +396,10 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
+  <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
+  <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">雲端分層授權支援、可用於其他叢集組態</block>
+  <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">瞭解如何授權及設定這些類型的叢集。</block>
+  <block id="4675a948ea93098e22976c0848737e1a" category="paragraph">雲端分層授權現在可與分層鏡射組態（不含MetroCluster 非功能組態）的叢集、以及分層至IBM Cloud Object Storage的叢集共享。您不再需要在FabricPool 這些情況下使用過時的不再使用的功能介紹授權。如此一來、您就能更輕鬆地在更多叢集上使用「浮動」雲端分層授權。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
+  <block id="75ad6cd4979a906c67e27abc9ee1c14e" category="inline-link">請參閱支援的S3儲存類別。</block>
+  <block id="d3028cb26dae3dbde1ec068c17d15383" category="paragraph">設定雲端分層時、現在您可以設定生命週期規則、讓非使用中的資料在特定天數後從_Standard_儲存類別轉換為_Glacier即時擷取。這將有助於降低AWS基礎架構成本。<block ref="99f36cc81f33df65a0349e719000fada" category="inline-link-rx"></block></block>
 </blocks>
