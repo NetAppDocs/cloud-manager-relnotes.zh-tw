@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: release-notes-index.html 
+---
+= 版本資訊索引
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+檢視每項個別服務的完整版本資訊。
+
+
+
+== 儲存設備
+
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/whats-new.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/whats-new.html["Amazon FSX for ONTAP Sf"^]
+* Cloud Volumes ONTAP
++
+** https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["發行說明Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager中的更新版本資訊Cloud Volumes ONTAP"^]
+
+
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/whats-new.html["適用於 Google Cloud Cloud Volumes Service"^]
+* https://docs.netapp.com/us-en/cloud-manager-kubernetes/whats-new.html["Kubernetes叢集"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html["內部 ONTAP 部署的叢集"^]
+
+
+
+
+== 資料服務
+
+* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["應用程式範本"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["雲端備份"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["雲端資料感測"^]
+* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Cloud Sync"^]
+* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["雲端分層"^]
+* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["運算"^]
+* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["全域檔案快取"^]
+* https://docs.netapp.com/us-en/cloud-manager-monitoring/whats-new.html["監控"^]
+* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["勒索軟體"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["複寫"^]
+* https://docs.netapp.com/us-en/cloud-manager-snapcenter/whats-new.html["支援服務SnapCenter"^]
+
+
+
+
+== 系統管理
+
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["設定與管理"^]
+
