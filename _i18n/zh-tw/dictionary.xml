@@ -178,16 +178,6 @@
   <block id="59e10c49329cd1a0a55e4a0d27f6a584" category="inline-link">瞭解如何將資料分層至S3相容的物件儲存設備</block>
   <block id="df94b79ab63138be1c03382ae20c338d" category="paragraph">現在、您可以將非作用中資料分層至任何使用簡易儲存服務（S3）傳輸協定的物件儲存服務。<block ref="26932bf166134e05b1ade0d7ecb1b6d8" category="inline-link-rx"></block>。</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="section-title">Cloud Volumes ONTAP</block>
-  <block id="e76164b285bb635d604e86db0ddefffb" category="paragraph">以下是3.9.18版Connector所做的變更。</block>
-  <block id="44521137c9499dbef6a006058d0d9127" category="section-title">版本9.11.0 Cloud Volumes ONTAP</block>
-  <block id="f5820273186d8dafc3fd2a4b4a00f3ab" category="paragraph">Cloud Manager現在可以部署及管理Cloud Volumes ONTAP 功能。</block>
-  <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">深入瞭Cloud Volumes ONTAP 解本版的更新功能</block>
-  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
-  <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">強化中介升級</block>
-  <block id="b1001d52fd68a717e647b035c7ba64fe" category="paragraph">當Cloud Manager升級HA配對的中介程式時、它現在會在刪除開機磁碟之前驗證是否有新的中介映像可用。此變更可確保在升級程序失敗時、中介程序仍能繼續順利運作。</block>
-  <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">K8s標籤已移除</block>
-  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">K8s索引標籤已在先前版本中過時、現在已移除。如果您想要搭配Cloud Volumes ONTAP 使用Kubernetes搭配使用、可以將託管Kubernetes叢集新增至Canvas、作為進階資料管理的工作環境。</block>
-  <block id="75b200b4f9a63bca2792f985693a22c8" category="inline-link">深入瞭解Cloud Manager中的Kubernetes資料管理</block>
   <block id="a3c559e0541e9bb860178ce6fe414224" category="section-title">適用於 GCP Cloud Volumes Service</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020年9月9日</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">支援Cloud Volumes Service for Google Cloud</block>
@@ -371,9 +361,17 @@
   <block id="914a5a27ea412edf84bb416054ec6d75" category="paragraph">您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。<block ref="87553c653b94d5529a2080374ec70030" category="inline-link-rx"></block>。</block>
   <block id="76553642514a4b204c12afe14df42e92" category="section-title">新的面板可顯示如何使用Cloud Backup來保護不同類別的資料。</block>
   <block id="c55588bedd5ed04bd522d770a0c3de70" category="paragraph">這個全新的「備份狀態」面板顯示、如果您因為勒索軟體攻擊而需要恢復、最重要的資料類別將會備份得多麼完整。此資料可視覺化呈現由Cloud Backup備份環境中特定類別的項目數量。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
-  <block id="26d5bbfbcc4977b2a70100d0969dd28c" category="paragraph"><block ref="97bbe1f6bede29b64e2101d03c2362cb" category="inline-link-rx"></block>= Azure年度合約</block>
-  <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">Azure現已透過年度合約提供Essentials與Professional套裝軟體。您可以聯絡NetApp銷售代表以購買年度合約。該合約可在Azure Marketplace以私人優惠形式提供。</block>
-  <block id="51606c7b614cdc7ab9e0489981838dfa" category="paragraph">NetApp與您分享私人優惠之後、您可以在工作環境建立期間、從Azure Marketplace訂閱年度方案。</block>
-  <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">深入瞭解授權</block>
-  <block id="bd2a7f63a398b5af0c64c2d07409b38c" category="paragraph"><block ref="fa67dcc1253d6ef7da36dd244bfe620f" category="inline-link-rx"></block>。</block>
+  <block id="97106e7449f4966fc1e4b3b78d425110" category="section-title">System Manager連結已移除</block>
+  <block id="249f6fd27ec465f7b6af7dc12178a1ea" category="paragraph">我們已移除Cloud Volumes ONTAP 先前可從功能環境中取得的System Manager連結。</block>
+  <block id="1979125e36e7d7c49ca297e15301d908" category="inline-link">深入瞭解連線至System Manager</block>
+  <block id="bbf60c789b26c6dcc40b75262425eac7" category="paragraph">您仍可在連線Cloud Volumes ONTAP 至該系統的網頁瀏覽器中輸入叢集管理IP位址、以連線至System Manager。<block ref="c343c10570bfa751089c9639f87b6a1f" category="inline-link-rx"></block>。</block>
+  <block id="0f132f66e81cbab588044405a33dc058" category="section-title">WORM儲存設備充電</block>
+  <block id="d87a373c29bad4362e9f6515cb3a6927" category="paragraph">入門特惠費率已經到期、現在您將需要支付使用WORM儲存設備的費用。根據WORM磁碟區的總配置容量、每小時充電一次。這適用於新的Cloud Volumes ONTAP 和現有的不全系統。</block>
+  <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">瞭解WORM儲存設備的定價</block>
+  <block id="074dbf8cc93ccd34e86e3e2e8f2a1e3a" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block>。</block>
+  <block id="eb1bf021e05707d1f69722b4d550c310" category="paragraph">以下變更是在版本3.9.16的Connector中進行。</block>
+  <block id="06a685f653628719e2e70fedf9b250a9" category="section-title">重新設計Volume精靈</block>
+  <block id="dd787088b52e69b3d8bf590e16c8413c" category="paragraph">我們最近推出的「建立新磁碟區精靈」、現在可從*進階分配*選項在特定的集合體上建立磁碟區。</block>
+  <block id="c4abca012bce01614c5a65c5b0e6ecd6" category="inline-link">瞭解如何在特定的Aggregate上建立磁碟區</block>
+  <block id="1c6f86b67d4150db2b816bc084d4c069" category="paragraph"><block ref="525dd47105081fbda31ba7a2793ca879" category="inline-link-rx"></block>。</block>
 </blocks>

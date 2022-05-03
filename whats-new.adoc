@@ -322,7 +322,7 @@ Data Sense可從Google Docs套件（文件、工作表和投影片）中識別�
 
 ==== 目錄層級檢視已新增至「資料調查」頁面
 
-除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。現在您可以在目錄層級管理資料。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["瞭解如何選取掃描資料的「目錄」檢視"]。
+c7fd320d60c5b92b36ff4a806aef9121
 
 
 
@@ -515,37 +515,37 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering
 
 
 
-=== 2022年5月2日
-
-以下是3.9.18版Connector所做的變更。
+=== 2022年4月3日
 
 
 
-==== 版本9.11.0 Cloud Volumes ONTAP
+==== System Manager連結已移除
 
-Cloud Manager現在可以部署及管理Cloud Volumes ONTAP 功能。
+我們已移除Cloud Volumes ONTAP 先前可從功能環境中取得的System Manager連結。
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]。
-
-
-
-==== 強化中介升級
-
-當Cloud Manager升級HA配對的中介程式時、它現在會在刪除開機磁碟之前驗證是否有新的中介映像可用。此變更可確保在升級程序失敗時、中介程序仍能繼續順利運作。
+您仍可在連線Cloud Volumes ONTAP 至該系統的網頁瀏覽器中輸入叢集管理IP位址、以連線至System Manager。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html["深入瞭解連線至System Manager"]。
 
 
 
-==== K8s標籤已移除
+==== WORM儲存設備充電
 
-K8s索引標籤已在先前版本中過時、現在已移除。如果您想要搭配Cloud Volumes ONTAP 使用Kubernetes搭配使用、可以將託管Kubernetes叢集新增至Canvas、作為進階資料管理的工作環境。
+入門特惠費率已經到期、現在您將需要支付使用WORM儲存設備的費用。根據WORM磁碟區的總配置容量、每小時充電一次。這適用於新的Cloud Volumes ONTAP 和現有的不全系統。
 
-https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["深入瞭解Cloud Manager中的Kubernetes資料管理"^]= Azure年度合約
+https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]。
 
-Azure現已透過年度合約提供Essentials與Professional套裝軟體。您可以聯絡NetApp銷售代表以購買年度合約。該合約可在Azure Marketplace以私人優惠形式提供。
 
-NetApp與您分享私人優惠之後、您可以在工作環境建立期間、從Azure Marketplace訂閱年度方案。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭解授權"]。
+=== 2022年2月27日
+
+以下變更是在版本3.9.16的Connector中進行。
+
+
+
+==== 重新設計Volume精靈
+
+我們最近推出的「建立新磁碟區精靈」、現在可從*進階分配*選項在特定的集合體上建立磁碟區。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["瞭解如何在特定的Aggregate上建立磁碟區"]。
 
 
 
