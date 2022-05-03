@@ -539,41 +539,13 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volum
 
 K8s索引標籤已在先前版本中過時、現在已移除。如果您想要搭配Cloud Volumes ONTAP 使用Kubernetes搭配使用、可以將託管Kubernetes叢集新增至Canvas、作為進階資料管理的工作環境。
 
-https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["深入瞭解Cloud Manager中的Kubernetes資料管理"^]
+https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["深入瞭解Cloud Manager中的Kubernetes資料管理"^]= Azure年度合約
 
+Azure現已透過年度合約提供Essentials與Professional套裝軟體。您可以聯絡NetApp銷售代表以購買年度合約。該合約可在Azure Marketplace以私人優惠形式提供。
 
+NetApp與您分享私人優惠之後、您可以在工作環境建立期間、從Azure Marketplace訂閱年度方案。
 
-=== 2022年4月3日
-
-
-
-==== System Manager連結已移除
-
-我們已移除Cloud Volumes ONTAP 先前可從功能環境中取得的System Manager連結。
-
-您仍可在連線Cloud Volumes ONTAP 至該系統的網頁瀏覽器中輸入叢集管理IP位址、以連線至System Manager。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html["深入瞭解連線至System Manager"]。
-
-
-
-==== WORM儲存設備充電
-
-入門特惠費率已經到期、現在您將需要支付使用WORM儲存設備的費用。根據WORM磁碟區的總配置容量、每小時充電一次。這適用於新的Cloud Volumes ONTAP 和現有的不全系統。
-
-https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]。
-
-
-
-=== 2022年2月27日
-
-以下變更是在版本3.9.16的Connector中進行。
-
-
-
-==== 重新設計Volume精靈
-
-我們最近推出的「建立新磁碟區精靈」、現在可從*進階分配*選項在特定的集合體上建立磁碟區。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["瞭解如何在特定的Aggregate上建立磁碟區"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["深入瞭解授權"]。
 
 
 
