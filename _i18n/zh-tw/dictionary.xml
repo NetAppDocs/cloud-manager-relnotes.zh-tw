@@ -344,7 +344,6 @@
   <block id="d166e1f4f240d3915c676102b853aab5" category="paragraph">Data Sense可從Google Docs套件（文件、工作表和投影片）中識別下列Google檔案類型中的個人識別資訊（PII）、以及<block ref="c10736ee2c8542c954ba18655a2447a7" category="inline-link-rx"></block>。</block>
   <block id="2f8d7f7b2a9f475f94e961eea0214b6f" category="section-title">目錄層級檢視已新增至「資料調查」頁面</block>
   <block id="a1e4ba958a7013f98fdbb1a883102e86" category="inline-link">瞭解如何選取掃描資料的「目錄」檢視</block>
-  <block id="a5d473c55c66a556abf96b71579ff1bf" category="paragraph">除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。現在您可以在目錄層級管理資料。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
   <block id="fc923fa1acb929379421a26667fff392" category="section-title">展開群組以顯示具有存取檔案權限的使用者/成員</block>
   <block id="87dc185d970f7684d5d731eebbf8d195" category="inline-link">瞭解如何檢視具有檔案讀取和/或寫入權限的使用者和群組</block>
   <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">身為Data Sense權限功能的一部分、您現在可以檢視擁有檔案存取權的使用者和群組清單。每個群組都可展開以顯示群組中的使用者清單。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
@@ -374,4 +373,5 @@
   <block id="dd787088b52e69b3d8bf590e16c8413c" category="paragraph">我們最近推出的「建立新磁碟區精靈」、現在可從*進階分配*選項在特定的集合體上建立磁碟區。</block>
   <block id="c4abca012bce01614c5a65c5b0e6ecd6" category="inline-link">瞭解如何在特定的Aggregate上建立磁碟區</block>
   <block id="1c6f86b67d4150db2b816bc084d4c069" category="paragraph"><block ref="525dd47105081fbda31ba7a2793ca879" category="inline-link-rx"></block>。</block>
+  <block id="c7fd320d60c5b92b36ff4a806aef9121" category="paragraph">除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。系統會為已掃描的CIFS和NFS共用、以及OneDrive、SharePoint和Google Drive資料夾建立目錄索引。現在您可以在目錄層級檢視權限並管理資料。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
 </blocks>
