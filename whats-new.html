@@ -487,7 +487,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:00:58 +0000">05/03/2022</time>
+    <time datetime="2022-05-04 13:05:20 +0000">05/04/2022</time>
     
   
 
@@ -548,9 +548,9 @@
 </li>
 <li><a href="#雲端分層">雲端分層</a>
 <ul class="sectlevel2">
+<li><a href="#2022年5月3日">2022年5月3日</a></li>
 <li><a href="#2022年4月4日-2">2022年4月4日</a></li>
 <li><a href="#2021年9月2日">2021年9月2日</a></li>
-<li><a href="#2021年7月7日">2021年7月7日</a></li>
 </ul>
 </li>
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
@@ -1140,11 +1140,20 @@
 <h2 id="雲端分層">雲端分層</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年5月3日">2022年5月3日</h3>
+<div class="sect3">
+<h4 id="雲端分層授權支援可用於其他叢集組態">雲端分層授權支援、可用於其他叢集組態</h4>
+<div class="paragraph">
+<p>雲端分層授權現在可與分層鏡射組態（不含MetroCluster 非功能組態）的叢集、以及分層至IBM Cloud Object Storage的叢集共享。您不再需要在FabricPool 這些情況下使用過時的不再使用的功能介紹授權。如此一來、您就能更輕鬆地在更多叢集上使用「浮動」雲端分層授權。 <a href="https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations">"瞭解如何授權及設定這些類型的叢集。"</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年4月4日-2">2022年4月4日</h3>
 <div class="sect3">
 <h4 id="amazon-s3-glacier立即擷取儲存類別現已推出">Amazon S3 Glacier立即擷取儲存類別現已推出</h4>
 <div class="paragraph">
-<p>設定雲端分層時、現在您可以設定生命週期規則、讓非使用中的資料在特定天數後從_Standard_儲存類別轉換為_Glacier即時擷取。這將有助於降低AWS基礎架構成本。</p>
+<p>設定雲端分層時、現在您可以設定生命週期規則、讓非使用中的資料在特定天數後從_Standard_儲存類別轉換為_Glacier即時擷取。這將有助於降低AWS基礎架構成本。 <a href="https://docs.netapp.com/us-en/cloud-manager-tiering/reference-aws-support.html">"請參閱支援的S3儲存類別。"</a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1169,15 +1178,6 @@
 <h4 id="將非作用中資料從內部ontap-的支援叢集分成s3相容的物件儲存設備">將非作用中資料從內部ONTAP 的支援叢集分成S3相容的物件儲存設備</h4>
 <div class="paragraph">
 <p>現在、您可以將非作用中資料分層至任何使用簡易儲存服務（S3）傳輸協定的物件儲存服務。 <a href="https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-s3-compat.html">"瞭解如何將資料分層至S3相容的物件儲存設備"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2021年7月7日">2021年7月7日</h3>
-<div class="sect3">
-<h4 id="將資料分層至azure-blob儲存設備時連接器可在內部環境中執行">將資料分層至Azure Blob儲存設備時、連接器可在內部環境中執行</h4>
-<div class="paragraph">
-<p>您不再需要使用安裝在Azure vnet中的Connector。將資料分層存放至Azure Blob儲存設備時、連接器可在內部部署的主機上執行。</p>
 </div>
 </div>
 </div>
