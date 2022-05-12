@@ -208,12 +208,6 @@
   <block id="8703dd42c4c647846ef556f4d8459d59" category="section-title">已將Openssl模組升級至1.1.1版。</block>
   <block id="513502857f15915e7acef1b7916eda1b" category="section-title">更新授權登錄頁面。</block>
   <block id="9993afe041a131f763bfa71520f8d27d" category="paragraph">GFC授權登錄頁面現在會顯示透過NetApp訂閱啟動的授權數量。</block>
-  <block id="5be3d95052c37ddc7c5e08fede5b7beb" category="section-title">2021年3月21日（版本1.0.3）</block>
-  <block id="d701539c3bff162de55bec2ac786dea9" category="section-title">軟體安裝程式會更新、自動將GFC程序排除在Windows Defender之外。</block>
-  <block id="2c7e576e2b46004ee7c7f2138e6b71e2" category="paragraph">Global File Cache軟體安裝程式現在可將所有GFC程序排除在Windows Defender軟體隨需掃描之外。</block>
-  <block id="718c867d7cc0d5ae654df61aed5134dd" category="section-title">新的「原則組態」索引標籤已新增至「組態主控台」。</block>
-  <block id="85630a0f5573b7e43d043882435503c0" category="paragraph">此組態索引標籤可讓您從GFC核心新增預先填入的工作。</block>
-  <block id="23f584e2a92da05ee5a990cefc20a926" category="section-title">強化軟體、減少記憶體使用量、同時提升效能與穩定性。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="ecee73066145d2e6f1b75b79d2af7514" category="section-title">使用Cloud Manager資源頁面管理Kubernetes叢集</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">快速入門</block>
@@ -412,4 +406,11 @@
   <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022年5月12日</block>
   <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">連接器3.9.18修補程式</block>
   <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。</block>
+  <block id="25cd9b4ac7b3c20c21ee2a72afe32aa0" category="section-title">2022年5月19日（版本1.3.0）</block>
+  <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">本頁</block>
+  <block id="538b3d7be12bcc1f18433981df773bc1" category="paragraph">1.3.0版的Global File Cache Edge軟體可從取得<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。</block>
+  <block id="9463b6d7b9d38e544c6a7eb98988bb3b" category="section-title">新的中繼資料邊緣同步功能</block>
+  <block id="2e0922ffb3ae1ae6ac16997e734d5154" category="paragraph">此「中繼資料邊緣同步」功能使用Edge同步功能做為核心架構。只有中繼資料資訊會更新所有已訂閱的Edge、而且檔案/資料夾會在Edge機器上建立。</block>
+  <block id="2273c570a2dcacbb1c4bb77abccca54b" category="section-title">License Manager服務增強功能</block>
+  <block id="03036f549995f5d3240d1c89c4f2f496" category="paragraph">全域檔案快取授權管理伺服器（LMS）服務已增強、可自動偵測Proxy設定。如此可實現無縫組態。</block>
 </blocks>
