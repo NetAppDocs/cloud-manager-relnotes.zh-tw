@@ -487,7 +487,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 19:06:20 +0000">05/12/2022</time>
+    <time datetime="2022-05-12 20:58:02 +0000">05/12/2022</time>
     
   
 
@@ -555,6 +555,7 @@
 </li>
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
 <ul class="sectlevel2">
+<li><a href="#2022年5月2日-3">2022年5月2日</a></li>
 <li><a href="#2022年4月3日-3">2022年4月3日</a></li>
 <li><a href="#2022年2月27日-3">2022年2月27日</a></li>
 </ul>
@@ -1190,6 +1191,134 @@
 <div class="sect1">
 <h2 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="2022年5月2日-3">2022年5月2日</h3>
+<div class="paragraph">
+<p>以下是3.9.18版Connector所做的變更。</p>
+</div>
+<div class="sect3">
+<h4 id="版本9-11-0-cloud-volumes-ontap">版本9.11.0 Cloud Volumes ONTAP</h4>
+<div class="paragraph">
+<p>Cloud Manager現在可以部署及管理Cloud Volumes ONTAP 功能。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes" target="_blank" rel="noopener">"深入瞭Cloud Volumes ONTAP 解本版的更新功能"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="強化中介升級">強化中介升級</h4>
+<div class="paragraph">
+<p>當Cloud Manager升級HA配對的中介程式時、它現在會在刪除開機磁碟之前驗證是否有新的中介映像可用。此變更可確保在升級程序失敗時、中介程序仍能繼續順利運作。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="k8s標籤已移除">K8s標籤已移除</h4>
+<div class="paragraph">
+<p>K8s索引標籤已在先前版本中過時、現在已移除。如果您想要搭配Cloud Volumes ONTAP 使用Kubernetes搭配使用、可以將託管Kubernetes叢集新增至Canvas、作為進階資料管理的工作環境。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html" target="_blank" rel="noopener">"深入瞭解Cloud Manager中的Kubernetes資料管理"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="azure年度合約">Azure年度合約</h4>
+<div class="paragraph">
+<p>Azure現已透過年度合約提供Essentials與Professional套裝軟體。您可以聯絡NetApp銷售代表以購買年度合約。該合約可在Azure Marketplace以私人優惠形式提供。</p>
+</div>
+<div class="paragraph">
+<p>NetApp與您分享私人優惠之後、您可以在工作環境建立期間、從Azure Marketplace訂閱年度方案。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html">"深入瞭解授權"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="s3-glacier即時擷取">S3 Glacier即時擷取</h4>
+<div class="paragraph">
+<p>您現在可以將階層式資料儲存在Amazon S3 Glacier即時擷取儲存類別中。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data">"瞭解如何變更階層式資料的儲存類別"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="connector需要新的aws權限">Connector需要新的AWS權限</h4>
+<div class="paragraph">
+<p>在單一可用度區域（AZ）中部署HA配對時、現在需要下列權限才能建立AWS分散配置群組：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"ec2:DescribePlacementGroups",
+"iam:GetRolePolicy",</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>現在需要這些權限、才能最佳化Cloud Manager建立放置群組的方式。</p>
+</div>
+<div class="paragraph">
+<p>請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單 <a href="https://mysupport.netapp.com/site/info/cloud-manager-policies" target="_blank" rel="noopener">"Cloud Manager 原則頁面"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="新的google-cloud區域支援">新的Google Cloud區域支援</h4>
+<div class="paragraph">
+<p>從9.10.1版開始、下列Google Cloud區域現在支援此功能：Cloud Volumes ONTAP</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>德里（亞洲-南2）</p>
+</li>
+<li>
+<p>墨爾本（澳洲-蘇特斯塔2）</p>
+</li>
+<li>
+<p>Milan（Europe - west8）-僅限單一節點</p>
+</li>
+<li>
+<p>Santiago,（西南1）-僅限單一節點</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="在google-cloud中支援n2-standard-16">在Google Cloud中支援n2-Standard-16</h4>
+<div class="paragraph">
+<p>從Cloud Volumes ONTAP 9.10.1版開始、Google Cloud現在支援使用支援n2-Standard-16機器類型的功能。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html" target="_blank" rel="noopener">"在Cloud Volumes ONTAP Google Cloud中檢視支援的支援功能組態"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="google-cloud防火牆原則的增強功能">Google Cloud防火牆原則的增強功能</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>當您Cloud Volumes ONTAP 在Google Cloud中建立一個「叢集式HA配對」時、Cloud Manager現在會在VPC中顯示所有現有的防火牆原則。</p>
+<div class="paragraph">
+<p>之前Cloud Manager不會在VPC-1、VPC-2或VPC-3中顯示任何沒有目標標記的原則。</p>
+</div>
+</li>
+<li>
+<p>當您Cloud Volumes ONTAP 在Google Cloud中建立一個單一節點系統時、現在您可以選擇是否要預先定義的防火牆原則、僅允許所選VPC（建議）或所有VPC內的流量。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="google-cloud服務帳戶的增強功能">Google Cloud服務帳戶的增強功能</h4>
+<div class="paragraph">
+<p>當您選擇要搭配Cloud Volumes ONTAP 使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png" alt="服務帳戶欄位的快照"></span></p>
+</div>
+</div>
+</div>
 <div class="sect2">
 <h3 id="2022年4月3日-3">2022年4月3日</h3>
 <div class="sect3">
