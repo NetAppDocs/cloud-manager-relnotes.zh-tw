@@ -27,6 +27,16 @@ summary: 瞭解Cloud Manager平台最新的雲端服務變更。如需詳細資�
 
 
 
+=== 2022年5月12日
+
+
+
+==== 連接器3.9.18修補程式
+
+我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。
+
+
+
 === 2022年5月2日
 
 
@@ -81,18 +91,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["瞭解如何使用IAM角色建立連接器"]。
 
 * 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["瞭解這些增強功能"^]
-
-
-
-
-=== 2022年2月27日
-
-
-
-==== 連接器3.9.16
-
-* 當您在Google Cloud中建立新的Connector時、Cloud Manager現在會顯示所有現有的防火牆原則。之前Cloud Manager不會顯示任何沒有目標標記的原則。
-* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#27-february-2022["瞭解這些增強功能"^]
 
 
 

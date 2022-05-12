@@ -36,9 +36,6 @@
   <block id="1d74a995b1a421dcb50976efb8094b21" category="paragraph"><block ref="f92b2fbbcca658498705715523d67bd6" category="inline-link-rx"></block>。</block>
   <block id="1d99a1c8fadd3f9a537fec830e9791e0" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="66c4cd7232189d67ede2231e4ccd26ce" category="inline-link-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022年2月27日</block>
-  <block id="8c4a1103eeca70528bc946c2246ec6f1" category="section-title">連接器3.9.16</block>
-  <block id="23ea931bf11f885e1a49e6970b0aa60a" category="list-text">當您在Google Cloud中建立新的Connector時、Cloud Manager現在會顯示所有現有的防火牆原則。之前Cloud Manager不會顯示任何沒有目標標記的原則。</block>
-  <block id="8452efafcd305c048b35a9ac1eaa0a58" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="f53661746a388d6e170677167c0cb4ac" category="inline-link-rx"></block></block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="section-title">Azure NetApp Files</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021年4月11日</block>
   <block id="860941d67aa8a8a442ba4a65191838cf" category="section-title">支援Volume範本</block>
@@ -412,4 +409,7 @@
   <block id="5c4a95a56d4b5bfef734aeab388618c0" category="section-title">Google Cloud服務帳戶的增強功能</block>
   <block id="06fa5bb865f711b645e1f86dd8711d63" category="paragraph">當您選擇要搭配Cloud Volumes ONTAP 使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。</block>
   <block id="92a991ca375ee56317f82c3a30f16fff" category="paragraph"><block ref="92a991ca375ee56317f82c3a30f16fff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">2022年5月12日</block>
+  <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">連接器3.9.18修補程式</block>
+  <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。</block>
 </blocks>
