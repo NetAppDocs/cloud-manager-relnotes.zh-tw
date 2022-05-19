@@ -454,6 +454,10 @@
         
 
         
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-family/">Cloud Manager</a>
+        </li>
+        
 
         <li class="n-breadcrumb__list-item">
           <a href="/zh-tw/cloud-manager-relnotes/">Release&nbsp;Notes</a>
@@ -487,7 +491,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-13 15:37:58 +0000">05/13/2022</time>
+    <time datetime="2022-05-19 18:31:08 +0000">05/19/2022</time>
     
   
 
@@ -573,9 +577,9 @@
 </li>
 <li><a href="#全域檔案快取">全域檔案快取</a>
 <ul class="sectlevel2">
+<li><a href="#2022年5月19日版本1-3-0">2022年5月19日（版本1.3.0）</a></li>
 <li><a href="#2021年12月17日1-2-0版">2021年12月17日（1.2.0版）</a></li>
 <li><a href="#2021年6月9日1-1-0版">2021年6月9日（1.1.0版）</a></li>
-<li><a href="#2021年3月21日版本1-0-3">2021年3月21日（版本1.0.3）</a></li>
 </ul>
 </li>
 <li><a href="#kubernetes">Kubernetes</a>
@@ -1416,6 +1420,24 @@
 <h2 id="全域檔案快取">全域檔案快取</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年5月19日版本1-3-0">2022年5月19日（版本1.3.0）</h3>
+<div class="paragraph">
+<p>1.3.0版的Global File Cache Edge軟體可從取得 <a href="https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources">"本頁"</a>。</p>
+</div>
+<div class="sect3">
+<h4 id="新的中繼資料邊緣同步功能">新的中繼資料邊緣同步功能</h4>
+<div class="paragraph">
+<p>此「中繼資料邊緣同步」功能使用Edge同步功能做為核心架構。只有中繼資料資訊會更新所有已訂閱的Edge、而且檔案/資料夾會在Edge機器上建立。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="license-manager服務增強功能">License Manager服務增強功能</h4>
+<div class="paragraph">
+<p>全域檔案快取授權管理伺服器（LMS）服務已增強、可自動偵測Proxy設定。如此可實現無縫組態。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2021年12月17日1-2-0版">2021年12月17日（1.2.0版）</h3>
 <div class="sect3">
 <h4 id="已將openssl模組升級至1-1-1版">已將Openssl模組升級至1.1.1版。</h4>
@@ -1447,25 +1469,6 @@
 <div class="paragraph">
 <p>GFC授權登錄頁面現在會顯示透過NetApp訂閱啟動的授權數量。</p>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2021年3月21日版本1-0-3">2021年3月21日（版本1.0.3）</h3>
-<div class="sect3">
-<h4 id="軟體安裝程式會更新自動將gfc程序排除在windows-defender之外">軟體安裝程式會更新、自動將GFC程序排除在Windows Defender之外。</h4>
-<div class="paragraph">
-<p>Global File Cache軟體安裝程式現在可將所有GFC程序排除在Windows Defender軟體隨需掃描之外。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="新的原則組態索引標籤已新增至組態主控台">新的「原則組態」索引標籤已新增至「組態主控台」。</h4>
-<div class="paragraph">
-<p>此組態索引標籤可讓您從GFC核心新增預先填入的工作。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="強化軟體減少記憶體使用量同時提升效能與穩定性">強化軟體、減少記憶體使用量、同時提升效能與穩定性。</h4>
-
 </div>
 </div>
 </div>
