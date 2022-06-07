@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/cloud-manager-relnotes/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-relnotes/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-relnotes/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-relnotes/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-relnotes/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-relnotes/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-relnotes/whats-new.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-relnotes/whats-new.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-relnotes/whats-new.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-relnotes/whats-new.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-relnotes/whats-new.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -362,8 +354,6 @@
           <img src="/zh-tw/cloud-manager-relnotes/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
 
 
-
-
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
   <a target="_blank" href="/zh-tw/cloud-manager-relnotes/pdfs/pages/whats-new.pdf" >
     <img src="/zh-tw/cloud-manager-relnotes/images/pdf.png" width="16" height="16"/>
@@ -413,10 +403,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        所有Cloud Manager文件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-relnotes/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-tw/cloud-manager-family/"><img src="/zh-tw/cloud-manager-relnotes/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-relnotes/index.html">
         Cloud Manager版本說明
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-relnotes/whats-new.html">
         最近的變更
@@ -491,7 +481,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-19 18:31:08 +0000">05/19/2022</time>
+    <time datetime="2022-06-07 21:57:04 +0000">06/07/2022</time>
     
   
 
@@ -503,6 +493,7 @@
 <ul class="sectlevel1">
 <li><a href="#管理功能">管理功能</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月7日">2022年6月7日</a></li>
 <li><a href="#2022年5月12日">2022年5月12日</a></li>
 <li><a href="#2022年5月2日">2022年5月2日</a></li>
 <li><a href="#2022年4月3日">2022年4月3日</a></li>
@@ -545,9 +536,9 @@
 </li>
 <li><a href="#cloud-sync">Cloud Sync</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月6日">2022年6月6日</a></li>
 <li><a href="#2022年5月1日">2022年5月1日</a></li>
 <li><a href="#2022年4月3日-2">2022年4月3日</a></li>
-<li><a href="#2022年3月3日-3">2022年3月3日</a></li>
 </ul>
 </li>
 <li><a href="#雲端分層">雲端分層</a>
@@ -584,9 +575,9 @@
 </li>
 <li><a href="#kubernetes">Kubernetes</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月6日-2">2022年6月6日</a></li>
 <li><a href="#2022年5月4日">2022年5月4日</a></li>
 <li><a href="#2022年4月4日-3">2022年4月4日</a></li>
-<li><a href="#2022年2月27日-3">2022年2月27日</a></li>
 </ul>
 </li>
 <li><a href="#監控">監控</a>
@@ -598,9 +589,9 @@
 </li>
 <li><a href="#內部-ontap-部署的叢集">內部 ONTAP 部署的叢集</a>
 <ul class="sectlevel2">
-<li><a href="#2022年2月27日-4">2022年2月27日</a></li>
+<li><a href="#2022年6月7日-2">2022年6月7日</a></li>
+<li><a href="#2022年2月27日-3">2022年2月27日</a></li>
 <li><a href="#2022年1月11日">2022年1月11日</a></li>
-<li><a href="#2021年11月28日">2021年11月28日</a></li>
 </ul>
 </li>
 <li><a href="#勒索軟體保護">勒索軟體保護</a>
@@ -635,6 +626,38 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>本節說明Cloud Manager管理功能的相關新功能：帳戶、連接器、雲端供應商認證等。</p>
+</div>
+<div class="sect2">
+<h3 id="2022年6月7日">2022年6月7日</h3>
+<div class="sect3">
+<h4 id="連接器3-9-19">連接器3.9.19</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>現在AWS雅加達地區（ap東南3區）支援Connector。</p>
+</li>
+<li>
+<p>現在Azure Brazil東南地區支援Connector。</p>
+<div class="paragraph">
+<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"檢視支援區域的完整清單"</a></p>
+</div>
+</li>
+<li>
+<p>此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022" target="_blank" rel="noopener">"深入瞭Cloud Volumes ONTAP 解功能強化功能"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022" target="_blank" rel="noopener">"深入瞭ONTAP 解內部叢集增強功能"</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="2022年5月12日">2022年5月12日</h3>
@@ -894,7 +917,7 @@
 <div class="sect3">
 <h4 id="設定要自動套用至kubernetes叢集中新建立之磁碟區的備份原則">設定要自動套用至Kubernetes叢集中新建立之磁碟區的備份原則</h4>
 <div class="paragraph">
-<p>如果您在雲端備份啟動後、將新的持續磁碟區新增至Kubernetes叢集、過去您需要記住為這些磁碟區設定備份。現在、您可以選取要自動套用至新建立磁碟區的原則。當為新的Kubernetes叢集啟動Cloud Backup時、此選項可在設定精靈中使用、或 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-kubernetes.html#setting-a-backup-policy-to-be-assigned-to-new-volumes">"從_備份設定_頁面"</a> 適用於已啟動Cloud Backup的叢集。</p>
+<p>如果您在雲端備份啟動後、將新的持續磁碟區新增至Kubernetes叢集、過去您需要記住為這些磁碟區設定備份。現在、您可以選取要自動套用至新建立磁碟區的原則。當為新的Kubernetes叢集啟動Cloud Backup時、此選項可在設定精靈中使用。</p>
 </div>
 </div>
 <div class="sect3">
@@ -1058,6 +1081,61 @@
 <h2 id="cloud-sync">Cloud Sync</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年6月6日">2022年6月6日</h3>
+<div class="sect3">
+<h4 id="持續同步">持續同步</h4>
+<div class="paragraph">
+<p>新設定可讓您持續將來源S3儲存區的變更同步至目標。</p>
+</div>
+<div class="paragraph">
+<p>初始資料同步之後Cloud Sync 、Syncset會偵聽來源S3儲存區的變更、並在目標發生時持續同步任何變更。不需要以排定的時間間隔重新掃描來源。此設定僅適用於從S3儲存區同步至S3、Google Cloud Storage、Azure Blob儲存設備、StorageGRID 不支援或IBM Storage的情況。</p>
+</div>
+<div class="paragraph">
+<p>請注意、與您的資料代理人相關聯的IAM角色需要下列權限才能使用此設定：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"s3:GetBucketNotification",
+"s3:PutBucketNotification"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>這些權限會自動新增至您所建立的任何新資料代理人。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-creating-relationships.html#settings">"深入瞭解Continuous Sync設定"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="顯示所有ontap-的資料">顯示所有ONTAP 的資料</h4>
+<div class="paragraph">
+<p>當您建立同步關係時Cloud Sync 、目前的功能就是在來源Cloud Volumes ONTAP 的支援系統上顯示所有Volume、內部部署ONTAP 的支援服務、或是在支援ONTAP 該功能的FSX檔案系統上顯示所有Volume。</p>
+</div>
+<div class="paragraph">
+<p>先前Cloud Sync 、僅顯示符合所選傳輸協定的磁碟區。現在所有的磁碟區都會顯示、但不符合所選傳輸協定或沒有共用區或匯出的任何磁碟區都會呈現灰色、而且無法選取。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="將標記複製到azure-blob">將標記複製到Azure Blob</h4>
+<div class="paragraph">
+<p>當您建立以Azure Blob為目標的同步關係時Cloud Sync 、現在可讓您將標記複製到Azure Blob容器：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在*設定*頁面上、您可以使用*複製物件*設定、將標記從來源複製到Azure Blob容器。這是複製中繼資料的附加功能。</p>
+</li>
+<li>
+<p>在「<strong>標記/中繼資料</strong>」頁面上、您可以指定要在複製到Azure Blob容器的物件上設定的Blob索引標籤。先前只能指定關係中繼資料。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>當Azure Blob為目標、且來源為Azure Blob或S3相容端點（S3、StorageGRID 候選或IBM Cloud Object Storage）時、便支援這些選項。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年5月1日">2022年5月1日</h3>
 <div class="sect3">
 <h4 id="同步逾時">同步逾時</h4>
@@ -1112,27 +1190,6 @@
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-filter.png" alt="快照顯示儀表板頂端的「依同步狀態篩選」選項。"></span></p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022年3月3日-3">2022年3月3日</h3>
-<div class="sect3">
-<h4 id="在儀表板中排序">在儀表板中排序</h4>
-<div class="paragraph">
-<p>您現在可以依照同步關係名稱來排序儀表板。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-sort.png" alt="顯示儀表板可用之「排序依據名稱」選項的快照。"></span></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="資料感測整合的增強功能">資料感測整合的增強功能</h4>
-<div class="paragraph">
-<p>在先前的版本中、我們推出Cloud Sync 了與Cloud Data Sense整合的功能。在此更新中、我們透過更輕鬆地建立同步關係來強化整合。從Cloud Data Sense啟動資料同步之後、所有來源資訊都會包含在單一步驟中、而且只需要輸入一些重要詳細資料即可。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-data-sense.png" alt="這張螢幕快照會顯示直接從Cloud Data Sense開始新同步後出現的「Data Sense Integration」（資料感測整合）頁面。"></span></p>
 </div>
 </div>
 </div>
@@ -1477,6 +1534,12 @@
 <h2 id="kubernetes">Kubernetes</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年6月6日-2">2022年6月6日</h3>
+<div class="paragraph">
+<p>Cloud Manager現在支援Amazon FSX ONTAP 作為後端儲存設備。</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年5月4日">2022年5月4日</h3>
 <div class="sect3">
 <h4 id="拖放以新增儲存類別">拖放以新增儲存類別</h4>
@@ -1516,18 +1579,6 @@
 <p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html">"啟用資料服務"</a></p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022年2月27日-3">2022年2月27日</h3>
-<div class="sect3">
-<h4 id="支援google-cloud中的kubernetes叢集">支援Google Cloud中的Kubernetes叢集</h4>
-<div class="paragraph">
-<p>您現在可以使用Cloud Manager、在Google Cloud中新增及管理託管的Google Kubernetes Engine（GKE）叢集和自我管理的Kubernetes叢集。</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html">"瞭解如何在Google Cloud中開始使用Kubernetes叢集"</a>。</p>
 </div>
 </div>
 </div>
@@ -1584,7 +1635,25 @@
 <h2 id="內部-ontap-部署的叢集">內部 ONTAP 部署的叢集</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="2022年2月27日-4">2022年2月27日</h3>
+<h3 id="2022年6月7日-2">2022年6月7日</h3>
+<div class="paragraph">
+<p>以下變更是在版本3.9.19的Connector中提出的。</p>
+</div>
+<div class="sect3">
+<h4 id="新的進階檢視">新的進階檢視</h4>
+<div class="paragraph">
+<p>如果您需要對ONTAP 內部部署的叢集執行進階管理、可以使用ONTAP 支援ONTAP 此功能的作業系統管理程式、這個管理介面是隨附於一個作業系統的。我們直接在Cloud Manager中加入System Manager介面、因此您不需要離開Cloud Manager進行進階管理。</p>
+</div>
+<div class="paragraph">
+<p>此「進階檢視」可在ONTAP 內部部署的叢集執行9.10.0或更新版本時、以預覽形式提供。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-administer-advanced-view.html">"深入瞭解進階檢視"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2022年2月27日-3">2022年2月27日</h3>
 <div class="sect3">
 <h4 id="數位錢包提供ontap-內部部署的功能索引標籤">數位錢包提供「ONTAP 內部部署的功能」索引標籤。</h4>
 <div class="paragraph">
@@ -1601,15 +1670,6 @@
 <h4 id="您在內部ontap-的等量資料叢集上新增到磁碟區的標記可與標記服務搭配使用">您在內部ONTAP 的等量資料叢集上新增到磁碟區的標記、可與標記服務搭配使用。</h4>
 <div class="paragraph">
 <p>您新增至磁碟區的標記現在與應用程式範本服務的標記功能相關聯、可協助您組織及簡化資源管理。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2021年11月28日">2021年11月28日</h3>
-<div class="sect3">
-<h4 id="已ontap-簡化內部部署的架構叢集建立volume精靈">已ONTAP 簡化內部部署的架構叢集建立Volume精靈</h4>
-<div class="paragraph">
-<p>我們重新設計了「建立Volume精靈」、以方便使用、現在您可以選擇自訂的匯出原則。</p>
 </div>
 </div>
 </div>
@@ -1857,4 +1917,5 @@
     </script>
     <script src='/zh-tw/cloud-manager-relnotes/js/www-ntap.js'></script>
     <script src='/zh-tw/cloud-manager-relnotes/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/cloud-manager-relnotes/js/sidebar.js'></script>
   </body></html>
