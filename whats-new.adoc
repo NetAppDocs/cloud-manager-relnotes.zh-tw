@@ -27,6 +27,50 @@ summary: 瞭解Cloud Manager平台最新的雲端服務變更。如需詳細資�
 
 
 
+=== 2022年7月3日
+
+
+
+==== 連接器3.9.20
+
+* 我們推出新的方法、可導覽至Cloud Manager介面不斷增加的功能清單。現在只要將游標放在左側面板上、即可輕鬆找到所有熟悉的Cloud Manager功能。
++
+image:screenshot-navigation.png["顯示Cloud Manager新左側導覽功能表的快照。"]
+
+* 您現在可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。
++
+link:task-monitor-cm-operations.html["深入瞭解監控帳戶運作的相關資訊"]。
+
+* Cloud Manager現在支援Azure Blob儲存設備和Google Cloud Storage做為工作環境、類似於Amazon S3支援。
++
+在Azure或Google Cloud中安裝Connector之後、Cloud Manager現在會自動探索Azure訂閱中Azure Blob儲存設備的相關資訊、或是在安裝Connector的專案中探索Google Cloud Storage的相關資訊。Cloud Manager會將物件儲存設備顯示為工作環境、您可以開啟以檢視更多詳細資訊。
+
++
+以下是Azure Blob工作環境的範例：
+
++
+image:screenshot-azure-blob.png["這是一個快照、顯示Azure Blob工作環境、您可以在其中檢視高層級的總覽、然後查看儲存帳戶的詳細資訊。"]
+
+* 我們重新設計Amazon S3工作環境的資源頁面、提供更詳細的S3儲存區資訊、例如容量、加密詳細資料等。
+* 下列Google Cloud區域現在支援Connector：
++
+** 馬德里（歐洲-西南1）
+** 巴黎（歐洲-西9）
+** 華沙（歐洲中心2）
+
+
+* 現在Azure West US 3區域支援Connector。
++
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
+
+* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-july-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
+
+
+
+
+
 === 2022年6月28日
 
 
@@ -58,16 +102,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完�
 
 
 
-
-
-
-=== 2022年5月12日
-
-
-
-==== 連接器3.9.18修補程式
-
-我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。
 
 
 
@@ -418,6 +452,64 @@ Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳�
 
 
 == Cloud Sync
+
+
+
+=== 2022年7月3日
+
+
+
+==== 支援Azure Data Lake Storage Gen2
+
+您現在可以將NFS伺服器或SMB伺服器的資料同步至Azure Data Lake Storage Gen2。
+
+建立包含Azure Data Lake的同步關係時、您需要提供Cloud Sync 含有儲存帳戶連線字串的功能。它必須是一般連線字串、而非共用存取簽章（SAS）。
+
+link:reference-supported-relationships.html["檢視支援的同步關係清單"]。
+
+
+
+==== 從Google Cloud Storage持續同步
+
+持續同步設定現在可從來源Google Cloud Storage儲存庫支援至雲端儲存目標。
+
+初始資料同步之後Cloud Sync 、Syncset會偵聽來源Google Cloud Storage儲存區的變更、並在目標發生時持續同步任何變更。此設定適用於從Google Cloud Storage儲存庫同步至S3、Google Cloud Storage、Azure Blob儲存設備、StorageGRID 不支援或IBM Storage的情況。
+
+與您的資料代理人相關聯的服務帳戶需要下列權限才能使用此設定：
+
+[source, json]
+----
+- pubsub.subscriptions.consume
+- pubsub.subscriptions.create
+- pubsub.subscriptions.delete
+- pubsub.subscriptions.list
+- pubsub.topics.attachSubscription
+- pubsub.topics.create
+- pubsub.topics.delete
+- pubsub.topics.list
+- pubsub.topics.setIamPolicy
+- storage.buckets.update
+----
+link:task-creating-relationships.html#settings["深入瞭解Continuous Sync設定"]。
+
+
+
+==== 新的Google Cloud區域支援
+
+下列Google Cloud地區現在支援此功能：Cloud Sync
+
+* 哥倫布（美國東部5）
+* 達拉斯（美國-南1）
+* 馬德里（歐洲-西南1）
+* 米蘭（歐洲-西8）
+* 巴黎（歐洲-西9）
+
+
+
+
+==== 全新Google Cloud機器類型
+
+Google Cloud中資料代理程式的預設機器類型現在是n2-Standard-4。
 
 
 
