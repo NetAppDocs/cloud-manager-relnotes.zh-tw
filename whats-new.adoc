@@ -260,6 +260,18 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年6月8日
+
+
+
+==== 適用於虛擬機器的Cloud Backup 1.1.0現已上市
+
+您可以將SnapCenter VMware vSphere的VMware vSphere的VMware vCenter外掛程式與Cloud Manager整合、以保護虛擬機器上的資料。您可以將資料存放區備份到雲端、SnapCenter 並輕鬆將虛擬機器還原回內部部署的VMware vSphere版的內部部署功能。
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-vm-data.html["深入瞭解如何將虛擬機器保護至雲端"]。
+
+
+
 === 2022年5月2日
 
 
@@ -557,6 +569,84 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering
 
 
 
+=== 2022年6月7日
+
+以下是3.9.19版本的Connector所做的變更。
+
+
+
+==== 零點9.11.1. Cloud Volumes ONTAP
+
+Cloud Manager現在可部署及管理Cloud Volumes ONTAP 支援全新功能和其他雲端供應商區域的功能。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["深入瞭Cloud Volumes ONTAP 解本版的更新功能"^]
+
+
+
+==== 新的進階檢視
+
+如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們直接在Cloud Manager中加入System Manager介面、讓您不需要離開Cloud Manager進行進階管理。
+
+此「進階檢視」可作為Cloud Volumes ONTAP Preview搭配使用的版本（含E59.10.0及更新版本）。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。
+
+link:task-administer-advanced-view.html["深入瞭解進階檢視"]。
+
+
+
+==== 支援Amazon EBS彈性Volume
+
+支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只是一個可提供更好的效能和額外容量、同時Cloud Manager還能視需要自動增加基礎磁碟容量。
+
+從_new _ Cloud Volumes ONTAP 版本-zhustr9.11.0系統、以及GP3和IO1 EBS磁碟類型開始、即可支援彈性磁碟區。
+
+link:concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"]。
+
+請注意、若要支援彈性磁碟區、連接器需要新的AWS權限：
+
+[source, json]
+----
+"ec2:DescribeVolumesModifications",
+"ec2:ModifyVolume",
+----
+請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]。
+
+
+
+==== 支援在共享AWS子網路中部署HA配對
+
+支援AWS VPC共享的支援範圍包括在內。Cloud Volumes ONTAP此版本的Connector可讓您在使用API時、將HA配對部署在AWS共用子網路中。
+
+link:task-deploy-aws-shared-vpc.html["瞭解如何在共用子網路中部署HA配對"]。
+
+
+
+==== 使用服務端點時網路存取受限
+
+Cloud Manager現在使用vnet服務端點來連線Cloud Volumes ONTAP 到各種不同的解決方法、限制網路存取。如果您停用Azure Private Link連線、Cloud Manager會使用服務端點。
+
+link:task-enabling-private-link.html["深入瞭解Azure Private Link與Cloud Volumes ONTAP NetApp的連線功能"]。
+
+
+
+==== 支援在Google Cloud中建立儲存VM
+
+從9.11.1版開始、Cloud Volumes ONTAP Google Cloud現在支援多個使用支援的儲存VM。從本版Connector開始、Cloud Manager可讓您Cloud Volumes ONTAP 使用API、在Google Cloud的「以雙埠HA配對」上建立儲存VM。
+
+若要支援建立儲存VM、Connector需要新的Google Cloud權限：
+
+[source, yaml]
+----
+- compute.instanceGroups.get
+- compute.addresses.get
+----
+請注意、您必須使用ONTAP NetApp CLI或System Manager、在單一節點系統上建立儲存VM。
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["深入瞭解Google Cloud中的儲存VM限制"^]
+* link:task-managing-svms-gcp.html["瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用"]
+
+
+
+
 === 2022年5月2日
 
 以下是3.9.18版Connector所做的變更。
@@ -676,20 +766,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 入門特惠費率已經到期、現在您將需要支付使用WORM儲存設備的費用。根據WORM磁碟區的總配置容量、每小時充電一次。這適用於新的Cloud Volumes ONTAP 和現有的不全系統。
 
 https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]。
-
-
-
-=== 2022年2月27日
-
-以下變更是在版本3.9.16的Connector中進行。
-
-
-
-==== 重新設計Volume精靈
-
-我們最近推出的「建立新磁碟區精靈」、現在可從*進階分配*選項在特定的集合體上建立磁碟區。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["瞭解如何在特定的Aggregate上建立磁碟區"]。
 
 
 

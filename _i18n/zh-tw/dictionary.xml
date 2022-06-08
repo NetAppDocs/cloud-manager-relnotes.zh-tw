@@ -341,11 +341,6 @@
   <block id="d87a373c29bad4362e9f6515cb3a6927" category="paragraph">入門特惠費率已經到期、現在您將需要支付使用WORM儲存設備的費用。根據WORM磁碟區的總配置容量、每小時充電一次。這適用於新的Cloud Volumes ONTAP 和現有的不全系統。</block>
   <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">瞭解WORM儲存設備的定價</block>
   <block id="074dbf8cc93ccd34e86e3e2e8f2a1e3a" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block>。</block>
-  <block id="eb1bf021e05707d1f69722b4d550c310" category="paragraph">以下變更是在版本3.9.16的Connector中進行。</block>
-  <block id="06a685f653628719e2e70fedf9b250a9" category="section-title">重新設計Volume精靈</block>
-  <block id="dd787088b52e69b3d8bf590e16c8413c" category="paragraph">我們最近推出的「建立新磁碟區精靈」、現在可從*進階分配*選項在特定的集合體上建立磁碟區。</block>
-  <block id="c4abca012bce01614c5a65c5b0e6ecd6" category="inline-link">瞭解如何在特定的Aggregate上建立磁碟區</block>
-  <block id="1c6f86b67d4150db2b816bc084d4c069" category="paragraph"><block ref="525dd47105081fbda31ba7a2793ca879" category="inline-link-rx"></block>。</block>
   <block id="c7fd320d60c5b92b36ff4a806aef9121" category="paragraph">除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。系統會為已掃描的CIFS和NFS共用、以及OneDrive、SharePoint和Google Drive資料夾建立目錄索引。現在您可以在目錄層級檢視權限並管理資料。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
   <block id="e76164b285bb635d604e86db0ddefffb" category="paragraph">以下是3.9.18版Connector所做的變更。</block>
   <block id="44521137c9499dbef6a006058d0d9127" category="section-title">版本9.11.0 Cloud Volumes ONTAP</block>
@@ -428,4 +423,37 @@
   <block id="99721ad2e6d601b2966a9d9e1c7de770" category="paragraph">此「進階檢視」可在ONTAP 內部部署的叢集執行9.10.0或更新版本時、以預覽形式提供。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。</block>
   <block id="f303a87fe6efba259b752f5a9e11064b" category="inline-link-macro">深入瞭解進階檢視</block>
   <block id="0c6e9220b6dd38f763ce6082c0125be9" category="paragraph"><block ref="cf41d716430563f350a841f38af568db" category="inline-link-macro-rx"></block>。</block>
+  <block id="677e0bc1aa65f4ce3324deca0bcf87f0" category="section-title">2022年6月8日</block>
+  <block id="afd87a86d8a5973d91f3fcc4e85c719f" category="section-title">適用於虛擬機器的Cloud Backup 1.1.0現已上市</block>
+  <block id="f1567e25bd3a491ec53134f59ea7cea7" category="paragraph">您可以將SnapCenter VMware vSphere的VMware vSphere的VMware vCenter外掛程式與Cloud Manager整合、以保護虛擬機器上的資料。您可以將資料存放區備份到雲端、SnapCenter 並輕鬆將虛擬機器還原回內部部署的VMware vSphere版的內部部署功能。</block>
+  <block id="b418e05c847b656e4a8ac26f2f0cc045" category="inline-link">深入瞭解如何將虛擬機器保護至雲端</block>
+  <block id="3a5ea6bb0616fe3f66bd74e5e18fd1b3" category="paragraph"><block ref="95fa49d8f0b9a0affedd5e0d4a52c2d2" category="inline-link-rx"></block>。</block>
+  <block id="650bbb3fd1c3ec1cf13fbf6dc440ce1c" category="paragraph">以下是3.9.19版本的Connector所做的變更。</block>
+  <block id="daa1014700acb24b76e93296bfc813fb" category="section-title">零點9.11.1. Cloud Volumes ONTAP</block>
+  <block id="5422eb6b3ee88eee2b931a6c1ae61c0d" category="paragraph">Cloud Manager現在可部署及管理Cloud Volumes ONTAP 支援全新功能和其他雲端供應商區域的功能。</block>
+  <block id="0d69949c9de36f8752d49be7f0ec9aed" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block></block>
+  <block id="129cb997dac90f5eb582bd49d3cae82c" category="paragraph">如果您需要執行Cloud Volumes ONTAP 進階的支援管理功能、可以使用ONTAP 支援ONTAP 此功能的支援功能、這個功能是隨附於一個系統的管理介面。我們直接在Cloud Manager中加入System Manager介面、讓您不需要離開Cloud Manager進行進階管理。</block>
+  <block id="07bba549da0c5d9af2f0531199cb73e0" category="paragraph">此「進階檢視」可作為Cloud Volumes ONTAP Preview搭配使用的版本（含E59.10.0及更新版本）。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。</block>
+  <block id="18f1ba3764c7c45f17295cada3f1b2ff" category="section-title">支援Amazon EBS彈性Volume</block>
+  <block id="2e2c03493705dc64283827f16a01fab5" category="paragraph">支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只是一個可提供更好的效能和額外容量、同時Cloud Manager還能視需要自動增加基礎磁碟容量。</block>
+  <block id="1fb2d1e9760db598bc140d6df5875a5f" category="paragraph">從_new _ Cloud Volumes ONTAP 版本-zhustr9.11.0系統、以及GP3和IO1 EBS磁碟類型開始、即可支援彈性磁碟區。</block>
+  <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link-macro">深入瞭解彈性磁碟區的支援</block>
+  <block id="65c3a54d401a824934a0b2987cd79906" category="paragraph"><block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>。</block>
+  <block id="1fa9d78d7f603e0879c6fe006c9879ac" category="paragraph">請注意、若要支援彈性磁碟區、連接器需要新的AWS權限：</block>
+  <block id="209d7fb058921dcca459d965ee59c7fc" category="section-title">支援在共享AWS子網路中部署HA配對</block>
+  <block id="009d92f6e41918233a5d5983863734d0" category="paragraph">支援AWS VPC共享的支援範圍包括在內。Cloud Volumes ONTAP此版本的Connector可讓您在使用API時、將HA配對部署在AWS共用子網路中。</block>
+  <block id="d4b5e68525cac241fcf3cdcaa1a6e3dd" category="inline-link-macro">瞭解如何在共用子網路中部署HA配對</block>
+  <block id="4c45890715a33614c9b68937f7331041" category="paragraph"><block ref="a2afa807549bbfc6a98031b51b81dd74" category="inline-link-macro-rx"></block>。</block>
+  <block id="b58bf50dd57317d50ce59551de45158f" category="section-title">使用服務端點時網路存取受限</block>
+  <block id="982c0b0bc19727a7a5017f464489da09" category="paragraph">Cloud Manager現在使用vnet服務端點來連線Cloud Volumes ONTAP 到各種不同的解決方法、限制網路存取。如果您停用Azure Private Link連線、Cloud Manager會使用服務端點。</block>
+  <block id="e020ad0693308c5d73b7fe4c7bafd660" category="inline-link-macro">深入瞭解Azure Private Link與Cloud Volumes ONTAP NetApp的連線功能</block>
+  <block id="572f029bc460b235b79bf593e07bce0a" category="paragraph"><block ref="11d2e9af90a503c65edc8ce2e258f040" category="inline-link-macro-rx"></block>。</block>
+  <block id="aace3e8a265fffb87e8d7fbd81d6adb9" category="section-title">支援在Google Cloud中建立儲存VM</block>
+  <block id="c248c01b69af03d24d1cd7a6b9ee8e7b" category="paragraph">從9.11.1版開始、Cloud Volumes ONTAP Google Cloud現在支援多個使用支援的儲存VM。從本版Connector開始、Cloud Manager可讓您Cloud Volumes ONTAP 使用API、在Google Cloud的「以雙埠HA配對」上建立儲存VM。</block>
+  <block id="33fdc8eb46b228d804c2bf216d7ab788" category="paragraph">若要支援建立儲存VM、Connector需要新的Google Cloud權限：</block>
+  <block id="1639fb8b97b722c837cf68d599ffe1c4" category="paragraph">請注意、您必須使用ONTAP NetApp CLI或System Manager、在單一節點系統上建立儲存VM。</block>
+  <block id="ab9d588372f30d162e50dbbed45980eb" category="inline-link">深入瞭解Google Cloud中的儲存VM限制</block>
+  <block id="7859fc06f13ff8714740aa72213f86e7" category="list-text"><block ref="7859fc06f13ff8714740aa72213f86e7" category="inline-link-rx"></block></block>
+  <block id="3a7eebf972f838daafe4ea7948002b3d" category="inline-link-macro">瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用</block>
+  <block id="4d4f80e19da50b86ec7f247f81baedf7" category="list-text"><block ref="4d4f80e19da50b86ec7f247f81baedf7" category="inline-link-macro-rx"></block></block>
 </blocks>
