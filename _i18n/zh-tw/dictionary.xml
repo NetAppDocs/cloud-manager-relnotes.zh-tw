@@ -438,7 +438,6 @@
   <block id="b7a41babdf28bb4d456f0725ccfbc402" category="list-text">無需增加檔案層級還原作業的成本</block>
   <block id="898be2b1c15b9168ca69a0986639cb4e" category="list-text">加快檔案層級的還原作業</block>
   <block id="f8cae2a44d4ac885154da71ae7da347a" category="list-text">在內部部署安裝Connector時、可支援從雲端瀏覽及還原檔案作業</block>
-  <block id="b7fe1f1109cab9c0a50f4ac3ee36df48" category="paragraph">請注意、如果您先前使用Cloud Restore執行個體/ VM、將會自動移除。</block>
   <block id="06a21d28fcdc17ce4f2e4747a1fe635b" category="section-title">瀏覽及還原Google Cloud和StorageGRID 支援不支援的檔案</block>
   <block id="60222043eb5ad60b7dd1964a983d4f85" category="inline-link">瞭解如何使用Browse &amp;amp; Restore從ONTAP 您的還原備份還原磁碟區和檔案</block>
   <block id="68792eeb104c6fe1ef3c561265ed75dd" category="paragraph">新增瀏覽與還原作業的容器（如上所述）之後、現在即可從儲存在Google Cloud和StorageGRID 更新系統中的備份檔案執行檔案還原作業。現在、瀏覽與還原可用於還原所有公有雲供應商和StorageGRID 來自於整個過程的檔案。<block ref="a4ebf9bfc678bc28afd45dff032c4465" category="inline-link-rx"></block>。</block>
@@ -478,4 +477,11 @@
   <block id="5e5a2d8b7f4ac8723d3873b0ba14916e" category="paragraph">全新的面板_Harden Your ONTAP SUREYS段 環境_提供ONTAP 您的某些支援系統設定的狀態、可追蹤您的部署安全程度、並根據<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> 以及<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> 主動偵測異常活動並提出警告。</block>
   <block id="ed35eae63358acfc6c38aefc0b7736d0" category="paragraph">這個全新的「備份狀態」面板顯示、如果您因為勒索軟體攻擊而需要恢復、最重要的資料類別將會備份得多麼完整。此資料可視覺化呈現由Cloud Backup備份環境中特定類別的項目數量。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
   <block id="f0affd41380a1f75f1e8cb0eb63a3746" category="paragraph">新的「業務關鍵資料權限分析」面板會顯示資料的權限狀態、這對您的業務而言至關重要。如此一來、您就能快速評估保護業務關鍵資料的能力。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
+  <block id="d4e2be367ddcfb2b47d5711136446363" category="section-title">2022年6月14日</block>
+  <block id="dd16b8804cbc8afa6e2f6deb9acf5bcf" category="section-title">我們新增支援功能、可在ONTAP 無法存取網際網路的站台中備份內部部署的叢集資料</block>
+  <block id="6f5c7024f5953e20be33f1c72e8d5f4a" category="paragraph">如果您的內部ONTAP 使用的叢集位於無法存取網際網路的站台、也稱為暗站或離線站台、現在您可以使用Cloud Backup將Volume資料備份到StorageGRID 位於同一個站台的NetApp作業系統。此功能需要Cloud Manager Connector（3.9.19或更新版本）也部署在離線站台。</block>
+  <block id="6f44a1bf2246f054fd573ae9473909b6" category="inline-link">瞭解如何在離線站台中安裝Connector</block>
+  <block id="826610554423c9dc8481da631ccae8be" category="inline-link">瞭解如何在ONTAP 離線網站上備份不只是StorageGRID 資料的功能</block>
+  <block id="824ce1955c2b2d5f91cb80c86545d639" category="paragraph"><block ref="eb618b89294e80d594faecbc4641afee" category="inline-link-rx"></block>。<block ref="f39d73248b535226c2e16237e43ff2d0" category="inline-link-rx"></block>。</block>
+  <block id="0a0c24e7fef8cd9bcb19d6db19987b93" category="paragraph">請注意、如果您先前使用Cloud Restore執行個體/ VM、將會自動移除。雲端備份程序會每天執行一次、以刪除所有舊的Cloud Restore執行個體。這項變更是完全透明的、不會對您的資料造成任何影響、而且您不會注意到備份或還原工作有任何變更。</block>
 </blocks>
