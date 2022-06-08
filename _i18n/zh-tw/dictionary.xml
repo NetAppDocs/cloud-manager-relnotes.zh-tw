@@ -9,22 +9,11 @@
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">管理功能</block>
   <block id="8f351a0ea0c00d874e3538dc3c565ffe" category="paragraph">本節說明Cloud Manager管理功能的相關新功能：帳戶、連接器、雲端供應商認證等。</block>
   <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022年5月2日</block>
-  <block id="def752908b0fa662bfb5de654a533140" category="section-title">連接器3.9.18</block>
-  <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">下列Google Cloud區域現在支援Connector：</block>
   <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">德里（亞洲-南2）</block>
   <block id="68fb6cfeb81e52feef062b88d7037b7e" category="list-text">墨爾本（澳洲-蘇特斯塔2）</block>
-  <block id="4b14bbd178377e932c7e97664c276be7" category="list-text">米蘭（歐洲-西8）</block>
-  <block id="dcbe8ad0293bd53296a9d2ec0f030d10" category="list-text">聖地牙哥（西南1）</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">檢視支援區域的完整清單</block>
   <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
-  <block id="5750adecdd8602aee9e0d7052b8cd392" category="list-text">當您選取要搭配Connector使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關聯的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。</block>
   <block id="898d465c80c6b6783418f6fa71db0946" category="inline-image-macro">服務帳戶欄位的快照</block>
-  <block id="506e06ca3e996f21913a49d1f4920902" category="paragraph"><block ref="506e06ca3e996f21913a49d1f4920902" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">防護VM功能</block>
-  <block id="2e0bddfca809f95cf3d5d7adfccca0e2" category="list-text">我們已在支援的OS上、在VM執行個體上、在Google Cloud上認證Connector<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
-  <block id="561748ecfe4fd0bd9f15c851d5de4d29" category="inline-link">瞭解這些增強功能</block>
-  <block id="d2b88fcff484dc7cae448a7e8c287a1f" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="60a968f5f71ebaff72f2727ce31f8e5b" category="inline-link-rx"></block></block>
-  <block id="5e9d36e4528c82da2b7294c252e52427" category="list-text">Connector需要新的AWS權限才能部署Cloud Volumes ONTAP 功能。</block>
   <block id="bfd761a70b5f9cd277ef7c878344df38" category="paragraph">在單一可用度區域（AZ）中部署HA配對時、現在需要下列權限才能建立AWS分散配置群組：</block>
   <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">現在需要這些權限、才能最佳化Cloud Manager建立放置群組的方式。</block>
   <block id="eaf263597aafb24c99ce4e16af420ae8" category="inline-link">Cloud Manager 原則頁面</block>
@@ -484,4 +473,8 @@
   <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（版本1.3.1）</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正問題</block>
   <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">1.3.1版的全域檔案快取Edge軟體可從取得<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。此版本可修正中所述的問題<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
+  <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">2022年6月28日</block>
+  <block id="47d69a1f17128c359904338c3502fe31" category="section-title">使用NetApp認證登入</block>
+  <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">當新使用者註冊Cloud Central時、他們現在可以選擇*登入NetApp*選項、以NetApp支援網站認證登入。這是輸入電子郵件地址和密碼的替代方法。</block>
+  <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">使用電子郵件地址和密碼的現有登入必須持續使用該登入方法。「以NetApp登入」選項適用於註冊的新使用者。</block>
 </blocks>

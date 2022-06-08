@@ -27,6 +27,19 @@ summary: 瞭解Cloud Manager平台最新的雲端服務變更。如需詳細資�
 
 
 
+=== 2022年6月28日
+
+
+
+==== 使用NetApp認證登入
+
+當新使用者註冊Cloud Central時、他們現在可以選擇*登入NetApp*選項、以NetApp支援網站認證登入。這是輸入電子郵件地址和密碼的替代方法。
+
+
+NOTE: 使用電子郵件地址和密碼的現有登入必須持續使用該登入方法。「以NetApp登入」選項適用於註冊的新使用者。
+
+
+
 === 2022年6月7日
 
 
@@ -55,49 +68,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完�
 ==== 連接器3.9.18修補程式
 
 我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。
-
-
-
-=== 2022年5月2日
-
-
-
-==== 連接器3.9.18
-
-* 下列Google Cloud區域現在支援Connector：
-+
-** 德里（亞洲-南2）
-** 墨爾本（澳洲-蘇特斯塔2）
-** 米蘭（歐洲-西8）
-** 聖地牙哥（西南1）
-
-
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
-
-* 當您選取要搭配Connector使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關聯的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-google-cloud-service-account.png["服務帳戶欄位的快照"]
-
-* 我們已在支援的OS上、在VM執行個體上、在Google Cloud上認證Connector https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["防護VM功能"^]
-* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-may-2022["瞭解這些增強功能"^]
-* Connector需要新的AWS權限才能部署Cloud Volumes ONTAP 功能。
-+
-在單一可用度區域（AZ）中部署HA配對時、現在需要下列權限才能建立AWS分散配置群組：
-
-+
-[source, json]
-----
-"ec2:DescribePlacementGroups",
-"iam:GetRolePolicy",
-----
-+
-現在需要這些權限、才能最佳化Cloud Manager建立放置群組的方式。
-
-+
-請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]。
-
-
 
 
 
