@@ -101,21 +101,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 
 
-=== 2022年4月3日
-
-
-
-==== 連接器3.9.17
-
-* 您現在可以透過讓Cloud Manager承擔您在環境中設定的IAM角色來建立Connector。這種驗證方法比共用AWS存取金鑰和秘密金鑰更安全。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["瞭解如何使用IAM角色建立連接器"]。
-
-* 此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["瞭解這些增強功能"^]
-
-
-
-
 == Azure NetApp Files
 
 
