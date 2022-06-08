@@ -108,7 +108,6 @@
   <block id="0749ae9ea79ee87dd8c530f67a9065fe" category="section-title">全新的搜尋與還原功能、可在ONTAP 所有的還原檔案中搜尋磁碟區或檔案</block>
   <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">瞭解如何使用搜尋&amp;amp;還原</block>
   <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">現在、您可以ONTAP 透過*全部的支援檔案*、以部分或完整的Volume名稱、部分或完整的檔案名稱、大小範圍及其他搜尋篩選條件來搜尋Volume或檔案。如果您不確定哪個叢集或磁碟區是資料的來源、這是尋找您要還原資料的絕佳新方法。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
-  <block id="536f48524e36a16593703c5d8d108b79" category="section-title">此版本已停止使用Cloud Data Sense掃描雲端備份檔案的試用版功能</block>
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="section-title">雲端資料感測</block>
   <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022年4月5日</block>
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">Data Sense可識別四種新類型的澳洲個人資料</block>
@@ -117,15 +116,6 @@
   <block id="0387123627dfe002c7435c0101983f19" category="section-title">現在全域Active Directory伺服器可以是LDAP伺服器</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022年3月15日</block>
-  <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">新篩選器、顯示特定使用者或群組擁有讀取或寫入權限的檔案</block>
-  <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">Data Sense可決定SharePoint和OneDrive帳戶中檔案的權限</block>
-  <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">Data Sense現在可以讀取OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。此資訊會顯示在檔案的「調查」窗格詳細資料中、以及「治理儀表板」的「開放權限」區域中。</block>
-  <block id="6f7f4b2d525b7b8ad22c1d283e4b195e" category="section-title">Data Sense可識別兩種其他類型的個人資料</block>
-  <block id="d431283363f0e868742391138a4ffbd0" category="list-text">法文INSEE：INSEE程式碼是法國國家統計與經濟研究所（INSEE）用來識別各種實體的數值代碼。</block>
-  <block id="7457180e95a424d146842587474ec483" category="list-text">密碼：此資訊是使用鄰近驗證來識別、方法是在英數字元字串旁尋找「password」一詞的排列。找到的項目數量將列在「法規遵循儀表板」的「個人結果」下方。您可以使用「篩選*個人資料&gt;密碼*」在「調查」窗格中搜尋包含密碼的檔案。</block>
-  <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">支援在黑暗站台部署OneDrive和SharePoint資料時掃描</block>
-  <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">您必須允許存取下列端點。</block>
-  <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
   <block id="e367efbc26bd12c0d6ae37dd6a55ef9b" category="section-title">Cloud Sync</block>
   <block id="81fb4d1570abd75a1e2945d1f1c9f8cc" category="section-title">2022年5月1日</block>
   <block id="5cccebf55aa4da23124f776528630bf3" category="section-title">同步逾時</block>
@@ -234,13 +224,8 @@
   <block id="3686b84bef4027bfe5a11fcf472d8662" category="paragraph">您新增至磁碟區的標記現在與應用程式範本服務的標記功能相關聯、可協助您組織及簡化資源管理。</block>
   <block id="950604af87c30e09716e6d097eb491db" category="section-title">勒索軟體保護</block>
   <block id="70ca849e4710f5c98451b61f2b47e5a8" category="section-title">新的面板可追蹤業務關鍵資料的權限狀態</block>
-  <block id="5816bf17c72947dceb173c559c3f6009" category="paragraph">新的「業務關鍵資料權限分析」面板會顯示資料的權限狀態、這對您的業務而言至關重要。如此一來、您就能快速評估保護業務關鍵資料的能力。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
   <block id="1029db4aa82b2fd39d624a6eda513d6c" category="section-title">「開放權限」區域現在包括OneDrive和SharePoint帳戶</block>
   <block id="52a3db95e0c303b6251e8f60de3b3f3d" category="paragraph">勒索軟體保護儀表板中的「開放權限」區域現在包含OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。</block>
-  <block id="67ecb98d51fb7fee47f7f4c979becfa6" category="section-title">全新勒索軟體保護服務</block>
-  <block id="c05006d715a916b10a4f130817c81c90" category="paragraph">全新的勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。</block>
-  <block id="7e0c2cf881384db7bfcfb883b67871a5" category="inline-link">深入瞭解這項新服務</block>
-  <block id="f8f0d5b489ad504a83a9a25f8afd6159" category="paragraph"><block ref="64dfcbf1401a338253308f53837a8af7" category="inline-link-rx"></block>。</block>
   <block id="8c340dc334134096f68b880b42a8692c" category="section-title">複寫</block>
   <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">支援Amazon FSX for ONTAP Sfy</block>
   <block id="59dfc17500b1e0b8d1824eb8b1413080" category="paragraph">您現在可以將資料從Cloud Volumes ONTAP 一套不間斷的系統或內部部署ONTAP 的一套功能的叢集複寫到Amazon FSX for ONTAP 整個檔案系統。</block>
@@ -320,14 +305,11 @@
   <block id="7613f02556e4a651db53f06b87b1b460" category="list-text">「使用者/群組權限」篩選器可讓您列出特定使用者或群組具有讀取和/或寫入權限的檔案、資料夾和共用。您可以選取多個使用者和/或群組名稱、或輸入部分名稱。T</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">請參閱所有篩選器清單、以供您調查資料</block>
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
-  <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">已新增名為「使用者/群組權限」的篩選器、以便列出特定使用者或群組具有讀取和/或寫入權限的檔案。您可以選取一或多個使用者和/或群組名稱、或輸入部分名稱。此功能適用於Cloud Volumes ONTAP 下列系統上的Volume：功能：功能包括：功能性、內部ONTAP 版本、功能性、Azure NetApp Files 功能性、功能性、功能性ONTAP 、功能性、功能性、功能性、功能性、功能性、功能性、功能性、可在</block>
   <block id="55a52ff3da54b1be61be4ffbf282e94a" category="section-title">全新面板可追蹤ONTAP 您的不穩定環境的安全強化。</block>
   <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">《NetApp ONTAP 資訊系統安全強化指南》</block>
   <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">介紹防勒索軟體功能ONTAP</block>
-  <block id="c0920e0c17ca7e741f375b33ea0a761b" category="paragraph">全新的「強化ONTAP 您的需求環境」面板提供ONTAP 您的支援系統中特定設定的狀態、可追蹤您的部署安全程度、並根據<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> 以及<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> 主動偵測異常活動並提出警告。</block>
   <block id="914a5a27ea412edf84bb416054ec6d75" category="paragraph">您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。<block ref="87553c653b94d5529a2080374ec70030" category="inline-link-rx"></block>。</block>
   <block id="76553642514a4b204c12afe14df42e92" category="section-title">新的面板可顯示如何使用Cloud Backup來保護不同類別的資料。</block>
-  <block id="c55588bedd5ed04bd522d770a0c3de70" category="paragraph">這個全新的「備份狀態」面板顯示、如果您因為勒索軟體攻擊而需要恢復、最重要的資料類別將會備份得多麼完整。此資料可視覺化呈現由Cloud Backup備份環境中特定類別的項目數量。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
   <block id="97106e7449f4966fc1e4b3b78d425110" category="section-title">System Manager連結已移除</block>
   <block id="249f6fd27ec465f7b6af7dc12178a1ea" category="paragraph">我們已移除Cloud Volumes ONTAP 先前可從功能環境中取得的System Manager連結。</block>
   <block id="1979125e36e7d7c49ca297e15301d908" category="inline-link">深入瞭解連線至System Manager</block>
@@ -471,4 +453,29 @@
   <block id="45ee97ced966affff074d2bc1efe2686" category="paragraph">全新的雲端應用程式備份功能可讓您將現有的Oracle與Microsoft SQL應用程式一致的Snapshot（備份）、從內部部署的主要儲存設備卸載到Amazon S3或Azure Blob的雲端物件儲存設備。</block>
   <block id="8a0841a62164343a6bb78ffd4349420f" category="inline-link">深入瞭解如何將內部部署應用程式資料保護至雲端</block>
   <block id="98d0ff36da367aa918057b6c42219851" category="paragraph"><block ref="6ddb7afc666833c3265591e4f4bdc4a7" category="inline-link-rx"></block>。</block>
+  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
+  <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">現在您可以從「資料調查」頁面下載結果、做為.Json報告</block>
+  <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">請參閱如何從「資料調查」頁面建立報告</block>
+  <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">在「資料調查」頁面中篩選資料之後、除了將資料儲存至本機系統上的.CSV檔案之外、現在您還可以將資料另存為.Json檔案、以便匯出至NFS共用。確認Data合理擁有正確的匯出存取權限。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
+  <block id="bef8207d9128cb7b1a5dc68939fc3d45" category="section-title">能夠從Data Sense UI解除安裝Data Sense</block>
+  <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">瞭解方法</block>
+  <block id="4aa7333b6753545c6a6c04dfb41b9866" category="paragraph">您可以解除安裝Data Sense、將軟體從主機中永久移除、如果是雲端部署、請刪除部署Data Sense的虛擬機器/執行個體。刪除執行個體會永久刪除所有已建立索引的資訊Data Sense已掃描。<block ref="3da12a48df084f38bafa988bc8e77bd7" category="inline-link-rx"></block>。</block>
+  <block id="d96d07db10c050adfb5fed7e3d885b82" category="section-title">稽核記錄功能現在可用來追蹤Data Sense所執行的行動記錄</block>
+  <block id="1ce49760bcdac502d41fb1e9e547086b" category="paragraph">稽核日誌會追蹤Data Sense對所有工作環境中的檔案所執行的管理活動、以及Data Sense正在掃描的資料來源。活動可以是使用者產生的（刪除檔案、建立原則等）或產生的原則（自動新增標籤至檔案、自動刪除檔案等）。</block>
+  <block id="f5678b0269d5a9952a36966b56ab8f2e" category="inline-link">如需稽核記錄的詳細資料、請參閱</block>
+  <block id="d96e8ae6f880fe9b4d4de06b59a2128b" category="paragraph"><block ref="a09465601260c6db487e05cfd3d2ec87" category="inline-link-rx"></block>。</block>
+  <block id="a74d72e2c5ed113941ee600287aaa999" category="section-title">在「Data Investigation」（資料調查）頁面中新增敏感識別碼的篩選器</block>
+  <block id="3c5d93e6c38bd86146cef63658df62d2" category="paragraph">「識別碼數量」篩選器可讓您列出具有特定數量敏感識別碼的檔案、包括個人資料和敏感個人資料。您可以選取1到10或1到1000等範圍、只檢視含有該敏感識別碼數目的檔案。</block>
+  <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">現在您可以編輯所建立的現有原則</block>
+  <block id="61e409921fe798c5667689af4656a112" category="inline-link">瞭解如何編輯原則</block>
+  <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
+  <block id="ee4612ccbf2c1a0b8e01a1dc2992487f" category="section-title">NAS檔案系統稽核狀態現在會針對ONTAP 您的不完整儲存VM進行追蹤</block>
+  <block id="9e0f0ecbfec67c585b4269b113f30ee3" category="paragraph">如果工作環境中少於40%的儲存VM啟用檔案系統稽核、則會在_Cyber Resilience Map_中新增警示。您可以在「_Harden Your ONTAP Sfor enapenity_」面板中、檢視未追蹤SMB和NFS事件的確切SVM數、並將其記錄到稽核記錄檔中。然後您可以決定是否對這些SVM啟用稽核。</block>
+  <block id="9f8d82fd59d602cd8a59ae988c97d5e6" category="section-title">當您的磁碟區未啟用隨裝即用的勒索軟體時、就會顯示警示</block>
+  <block id="5e75c953b6169be120d3ab03b8f54b15" category="paragraph">此資訊已在ONTAP 「_Harden Your ONTAP Sfor the Ezenology_」面板中報告、 但現在、當開箱內的勒索軟體功能在不到40%的磁碟區中開啟時、_網路還原地圖_會報告警示、以便您在儀表板中檢視此資訊。</block>
+  <block id="cc1796d3f81dc9429436a972e383c713" category="section-title">現在ONTAP 、我們會追蹤FSX for Sfor Sfor Sfor Sfor Sfor Systems以啟用Volume快照</block>
+  <block id="e59924af0c76a1072bb2a4cb349960b8" category="paragraph">「_Harden Your ONTAP Sfor Ezh enievenienials_」面板現在提供FSX for ONTAP EzSystems上Volume的Snapshot複本狀態。如果有不到40%的磁碟區受到快照保護、您也會在_網路還原地圖_中收到警示。</block>
+  <block id="5e5a2d8b7f4ac8723d3873b0ba14916e" category="paragraph">全新的面板_Harden Your ONTAP SUREYS段 環境_提供ONTAP 您的某些支援系統設定的狀態、可追蹤您的部署安全程度、並根據<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> 以及<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> 主動偵測異常活動並提出警告。</block>
+  <block id="ed35eae63358acfc6c38aefc0b7736d0" category="paragraph">這個全新的「備份狀態」面板顯示、如果您因為勒索軟體攻擊而需要恢復、最重要的資料類別將會備份得多麼完整。此資料可視覺化呈現由Cloud Backup備份環境中特定類別的項目數量。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
+  <block id="f0affd41380a1f75f1e8cb0eb63a3746" category="paragraph">新的「業務關鍵資料權限分析」面板會顯示資料的權限狀態、這對您的業務而言至關重要。如此一來、您就能快速評估保護業務關鍵資料的能力。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
 </blocks>

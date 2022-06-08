@@ -362,6 +362,44 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-d
 
 
 
+=== 2022年6月12日
+
+
+
+==== 現在您可以從「資料調查」頁面下載結果、做為.Json報告
+
+在「資料調查」頁面中篩選資料之後、除了將資料儲存至本機系統上的.CSV檔案之外、現在您還可以將資料另存為.Json檔案、以便匯出至NFS共用。確認Data合理擁有正確的匯出存取權限。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html#data-investigation-report["請參閱如何從「資料調查」頁面建立報告"]。
+
+
+
+==== 能夠從Data Sense UI解除安裝Data Sense
+
+您可以解除安裝Data Sense、將軟體從主機中永久移除、如果是雲端部署、請刪除部署Data Sense的虛擬機器/執行個體。刪除執行個體會永久刪除所有已建立索引的資訊Data Sense已掃描。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-uninstall-data-sense.html["瞭解方法"]。
+
+
+
+==== 稽核記錄功能現在可用來追蹤Data Sense所執行的行動記錄
+
+稽核日誌會追蹤Data Sense對所有工作環境中的檔案所執行的管理活動、以及Data Sense正在掃描的資料來源。活動可以是使用者產生的（刪除檔案、建立原則等）或產生的原則（自動新增標籤至檔案、自動刪除檔案等）。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-actions.html["如需稽核記錄的詳細資料、請參閱"]。
+
+
+
+==== 在「Data Investigation」（資料調查）頁面中新增敏感識別碼的篩選器
+
+「識別碼數量」篩選器可讓您列出具有特定數量敏感識別碼的檔案、包括個人資料和敏感個人資料。您可以選取1到10或1到1000等範圍、只檢視含有該敏感識別碼數目的檔案。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"]。
+
+
+
+==== 現在您可以編輯所建立的現有原則
+
+如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies["瞭解如何編輯原則"]。
+
+
+
 === 2022年5月11日
 
 
@@ -409,40 +447,6 @@ Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳�
 ==== 現在全域Active Directory伺服器可以是LDAP伺服器
 
 除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["如需詳細資料、請前往此處"]。
-
-
-
-=== 2022年3月15日
-
-
-
-==== 新篩選器、顯示特定使用者或群組擁有讀取或寫入權限的檔案
-
-已新增名為「使用者/群組權限」的篩選器、以便列出特定使用者或群組具有讀取和/或寫入權限的檔案。您可以選取一或多個使用者和/或群組名稱、或輸入部分名稱。此功能適用於Cloud Volumes ONTAP 下列系統上的Volume：功能：功能包括：功能性、內部ONTAP 版本、功能性、Azure NetApp Files 功能性、功能性、功能性ONTAP 、功能性、功能性、功能性、功能性、功能性、功能性、功能性、可在
-
-
-
-==== Data Sense可決定SharePoint和OneDrive帳戶中檔案的權限
-
-Data Sense現在可以讀取OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。此資訊會顯示在檔案的「調查」窗格詳細資料中、以及「治理儀表板」的「開放權限」區域中。
-
-
-
-==== Data Sense可識別兩種其他類型的個人資料
-
-* 法文INSEE：INSEE程式碼是法國國家統計與經濟研究所（INSEE）用來識別各種實體的數值代碼。
-* 密碼：此資訊是使用鄰近驗證來識別、方法是在英數字元字串旁尋找「password」一詞的排列。找到的項目數量將列在「法規遵循儀表板」的「個人結果」下方。您可以使用「篩選*個人資料>密碼*」在「調查」窗格中搜尋包含密碼的檔案。
-
-
-
-
-==== 支援在黑暗站台部署OneDrive和SharePoint資料時掃描
-
-當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["您必須允許存取下列端點。"]
-
-
-
-==== 此版本已停止使用Cloud Data Sense掃描雲端備份檔案的試用版功能
 
 
 
@@ -1035,13 +1039,35 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
+=== 2022年6月12日
+
+
+
+==== NAS檔案系統稽核狀態現在會針對ONTAP 您的不完整儲存VM進行追蹤
+
+如果工作環境中少於40%的儲存VM啟用檔案系統稽核、則會在_Cyber Resilience Map_中新增警示。您可以在「_Harden Your ONTAP Sfor enapenity_」面板中、檢視未追蹤SMB和NFS事件的確切SVM數、並將其記錄到稽核記錄檔中。然後您可以決定是否對這些SVM啟用稽核。
+
+
+
+==== 當您的磁碟區未啟用隨裝即用的勒索軟體時、就會顯示警示
+
+此資訊已在ONTAP 「_Harden Your ONTAP Sfor the Ezenology_」面板中報告、 但現在、當開箱內的勒索軟體功能在不到40%的磁碟區中開啟時、_網路還原地圖_會報告警示、以便您在儀表板中檢視此資訊。
+
+
+
+==== 現在ONTAP 、我們會追蹤FSX for Sfor Sfor Sfor Sfor Sfor Systems以啟用Volume快照
+
+「_Harden Your ONTAP Sfor Ezh enievenienials_」面板現在提供FSX for ONTAP EzSystems上Volume的Snapshot複本狀態。如果有不到40%的磁碟區受到快照保護、您也會在_網路還原地圖_中收到警示。
+
+
+
 === 2022年5月11日
 
 
 
 ==== 全新面板可追蹤ONTAP 您的不穩定環境的安全強化。
 
-全新的「強化ONTAP 您的需求環境」面板提供ONTAP 您的支援系統中特定設定的狀態、可追蹤您的部署安全程度、並根據 https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["《NetApp ONTAP 資訊系統安全強化指南》"^] 以及 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["介紹防勒索軟體功能ONTAP"^] 主動偵測異常活動並提出警告。
+全新的面板_Harden Your ONTAP SUREYS段 環境_提供ONTAP 您的某些支援系統設定的狀態、可追蹤您的部署安全程度、並根據 https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["《NetApp ONTAP 資訊系統安全強化指南》"^] 以及 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["介紹防勒索軟體功能ONTAP"^] 主動偵測異常活動並提出警告。
 
 您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["如需詳細資料、請前往此處"]。
 
@@ -1066,18 +1092,6 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 ==== 「開放權限」區域現在包括OneDrive和SharePoint帳戶
 
 勒索軟體保護儀表板中的「開放權限」區域現在包含OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。
-
-
-
-=== 2022年2月9日
-
-
-
-==== 全新勒索軟體保護服務
-
-全新的勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。
-
-https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html["深入瞭解這項新服務"]。
 
 
 
