@@ -30,11 +30,6 @@
   <block id="eaf263597aafb24c99ce4e16af420ae8" category="inline-link">Cloud Manager 原則頁面</block>
   <block id="26dd25d183752a9f37249174f3d3ff89" category="paragraph">請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單<block ref="0e92ab1ca454f31f07a6e5fba6519a3a" category="inline-link-rx"></block>。</block>
   <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022年4月3日</block>
-  <block id="5dc3495f29e6f1332d6d809ba30cbf83" category="section-title">連接器3.9.17</block>
-  <block id="dc45cdfe41bbcfa7f2d8bf1ed54a89ed" category="list-text">您現在可以透過讓Cloud Manager承擔您在環境中設定的IAM角色來建立Connector。這種驗證方法比共用AWS存取金鑰和秘密金鑰更安全。</block>
-  <block id="c1ef500163b033b0cacf87c830339c6e" category="inline-link">瞭解如何使用IAM角色建立連接器</block>
-  <block id="1d74a995b1a421dcb50976efb8094b21" category="paragraph"><block ref="f92b2fbbcca658498705715523d67bd6" category="inline-link-rx"></block>。</block>
-  <block id="1d99a1c8fadd3f9a537fec830e9791e0" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。<block ref="66c4cd7232189d67ede2231e4ccd26ce" category="inline-link-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022年2月27日</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="section-title">Azure NetApp Files</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021年4月11日</block>
@@ -109,7 +104,6 @@
   <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">瞭解如何使用搜尋&amp;amp;還原</block>
   <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">現在、您可以ONTAP 透過*全部的支援檔案*、以部分或完整的Volume名稱、部分或完整的檔案名稱、大小範圍及其他搜尋篩選條件來搜尋Volume或檔案。如果您不確定哪個叢集或磁碟區是資料的來源、這是尋找您要還原資料的絕佳新方法。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="section-title">雲端資料感測</block>
-  <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022年4月5日</block>
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">Data Sense可識別四種新類型的澳洲個人資料</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看Data Sense可在您的資料中識別的所有個人資料類型</block>
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
@@ -484,4 +478,10 @@
   <block id="826610554423c9dc8481da631ccae8be" category="inline-link">瞭解如何在ONTAP 離線網站上備份不只是StorageGRID 資料的功能</block>
   <block id="824ce1955c2b2d5f91cb80c86545d639" category="paragraph"><block ref="eb618b89294e80d594faecbc4641afee" category="inline-link-rx"></block>。<block ref="f39d73248b535226c2e16237e43ff2d0" category="inline-link-rx"></block>。</block>
   <block id="0a0c24e7fef8cd9bcb19d6db19987b93" category="paragraph">請注意、如果您先前使用Cloud Restore執行個體/ VM、將會自動移除。雲端備份程序會每天執行一次、以刪除所有舊的Cloud Restore執行個體。這項變更是完全透明的、不會對您的資料造成任何影響、而且您不會注意到備份或還原工作有任何變更。</block>
+  <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（1.13.1版）</block>
+  <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（1.12.1版）</block>
+  <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（版本1.11.1）</block>
+  <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（版本1.3.1）</block>
+  <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正問題</block>
+  <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">1.3.1版的全域檔案快取Edge軟體可從取得<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。此版本可修正中所述的問題<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
 </blocks>

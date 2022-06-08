@@ -359,7 +359,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-d
 
 
 
-=== 2022年6月12日
+=== 2022年6月12日（1.13.1版）
 
 
 
@@ -397,7 +397,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 
-=== 2022年5月11日
+=== 2022年5月11日（1.12.1版）
 
 
 
@@ -431,7 +431,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 
-=== 2022年4月5日
+=== 2022年4月5日（版本1.11.1）
 
 
 
@@ -844,6 +844,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 
 == 全域檔案快取
+
+
+
+=== 2022年6月23日（版本1.3.1）
+
+1.3.1版的全域檔案快取Edge軟體可從取得 https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["本頁"]。此版本可修正中所述的問題 https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["修正問題"]。
 
 
 
