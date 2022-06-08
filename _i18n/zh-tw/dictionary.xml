@@ -104,15 +104,10 @@
   <block id="ecd035ede918d91432ba5203669d96bd" category="paragraph"><block ref="7226e404226609d8e6a7fa892651e74a" category="inline-link-rx"></block>。</block>
   <block id="ad806d4b803a5aa7358400786d14dec0" category="section-title">2022年4月4日</block>
   <block id="223fdeee6256cb135700ded14acc7574" category="section-title">Cloud Backup for Applications 1.1.0 SnapCenter （以支援功能為基礎）現已成為正式上市</block>
-  <block id="1d62f7c162a37407056f64380ddd240c" category="paragraph">全新的雲端應用程式備份功能可讓您將現有的Oracle與Microsoft SQL應用程式一致的Snapshot（備份）、從內部部署的主要儲存設備、卸載到AWS S3或Azure Blob的雲端物件儲存設備。</block>
   <block id="1959411b4282df2234896496da39c42f" category="paragraph">必要時、您可以將這些資料從雲端還原至內部部署。</block>
-  <block id="9793a7606042d0fe65c3a7569fe10e8a" category="inline-link">深入瞭解如何將內部部署應用程式資料保護至雲端</block>
-  <block id="eda2e5118f80ed23863efd871fe97b1e" category="paragraph"><block ref="4c415cce11b2e607b8fde97291a59b9c" category="inline-link-rx"></block>。</block>
   <block id="0749ae9ea79ee87dd8c530f67a9065fe" category="section-title">全新的搜尋與還原功能、可在ONTAP 所有的還原檔案中搜尋磁碟區或檔案</block>
   <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">瞭解如何使用搜尋&amp;amp;還原</block>
   <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">現在、您可以ONTAP 透過*全部的支援檔案*、以部分或完整的Volume名稱、部分或完整的檔案名稱、大小範圍及其他搜尋篩選條件來搜尋Volume或檔案。如果您不確定哪個叢集或磁碟區是資料的來源、這是尋找您要還原資料的絕佳新方法。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
-  <block id="afffc0d082245313c31dfcac23d2d8e0" category="section-title">能夠將持續磁碟區從GKE Kubernetes叢集備份到Google Cloud儲存設備</block>
-  <block id="387cd7ab52bc5fa4b28d5ab54360a48f" category="paragraph">如果您的GKE叢集已安裝NetApp Astra Trident、而且使用Cloud Volumes ONTAP 適用於GCP的功能作為叢集的後端儲存設備、則您可以在Google Cloud儲存設備之間備份及還原持續的磁碟區。<block ref="39d25c9214775db10710eba772faa6a0" category="inline-link-rx"></block>。</block>
   <block id="536f48524e36a16593703c5d8d108b79" category="section-title">此版本已停止使用Cloud Data Sense掃描雲端備份檔案的試用版功能</block>
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="section-title">雲端資料感測</block>
   <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022年4月5日</block>
@@ -456,4 +451,24 @@
   <block id="7859fc06f13ff8714740aa72213f86e7" category="list-text"><block ref="7859fc06f13ff8714740aa72213f86e7" category="inline-link-rx"></block></block>
   <block id="3a7eebf972f838daafe4ea7948002b3d" category="inline-link-macro">瞭解如何在Cloud Volumes ONTAP Google Cloud中建立資料服務儲存VM以供其使用</block>
   <block id="4d4f80e19da50b86ec7f247f81baedf7" category="list-text"><block ref="4d4f80e19da50b86ec7f247f81baedf7" category="inline-link-macro-rx"></block></block>
+  <block id="338b73eb5ee02b02ceb307b68866c9f2" category="section-title">不需要Cloud Restore執行個體、ONTAP 即可執行瀏覽與還原功能</block>
+  <block id="c2f301bf47b0e51a835909a868e786b5" category="paragraph">用於從S3和Blob儲存設備進行檔案層級瀏覽與還原作業時、需要使用獨立的雲端還原執行個體/虛擬機器。此執行個體不使用時會關閉、但還原檔案時仍會增加一些時間和成本。此功能已由免費容器取代、可在需要時部署在Connector上。它具有下列優點：</block>
+  <block id="b7a41babdf28bb4d456f0725ccfbc402" category="list-text">無需增加檔案層級還原作業的成本</block>
+  <block id="898be2b1c15b9168ca69a0986639cb4e" category="list-text">加快檔案層級的還原作業</block>
+  <block id="f8cae2a44d4ac885154da71ae7da347a" category="list-text">在內部部署安裝Connector時、可支援從雲端瀏覽及還原檔案作業</block>
+  <block id="b7fe1f1109cab9c0a50f4ac3ee36df48" category="paragraph">請注意、如果您先前使用Cloud Restore執行個體/ VM、將會自動移除。</block>
+  <block id="06a21d28fcdc17ce4f2e4747a1fe635b" category="section-title">瀏覽及還原Google Cloud和StorageGRID 支援不支援的檔案</block>
+  <block id="60222043eb5ad60b7dd1964a983d4f85" category="inline-link">瞭解如何使用Browse &amp;amp; Restore從ONTAP 您的還原備份還原磁碟區和檔案</block>
+  <block id="68792eeb104c6fe1ef3c561265ed75dd" category="paragraph">新增瀏覽與還原作業的容器（如上所述）之後、現在即可從儲存在Google Cloud和StorageGRID 更新系統中的備份檔案執行檔案還原作業。現在、瀏覽與還原可用於還原所有公有雲供應商和StorageGRID 來自於整個過程的檔案。<block ref="a4ebf9bfc678bc28afd45dff032c4465" category="inline-link-rx"></block>。</block>
+  <block id="fe3455104008d8da35fbd267dbef0701" category="section-title">拖放以啟用雲端備份至S3儲存設備</block>
+  <block id="5e1eb4d1c116b2c77bbd1fbc73321106" category="paragraph">如果您的備份Amazon S3目的地是在Canvas上的工作環境、您可以將內部ONTAP 的支援叢集或Cloud Volumes ONTAP 支援系統（安裝於AWS中）拖曳到Amazon S3工作環境、以啟動設定精靈。</block>
+  <block id="da1d5a542623977c61bd148b8576513c" category="section-title">自動將備份原則套用至Kubernetes叢集中新建立的磁碟區</block>
+  <block id="31d9f5df125d9014e9c296eed143904c" category="inline-link">從_備份設定_頁面</block>
+  <block id="0781288780239fb5b3a1479574714ff9" category="paragraph">如果您在雲端備份啟動後、將新的持續磁碟區新增至Kubernetes叢集、過去您需要記住為這些磁碟區設定備份。現在、您可以選取要自動套用至新建立磁碟區的原則<block ref="11a3efd6b42c9f2e763586db69ebed23" category="inline-link-rx"></block> 適用於已啟動Cloud Backup的叢集。</block>
+  <block id="52e2c3fc6fb58a0ca1eb816ca6e270ed" category="section-title">雲端備份API現在可用於管理備份與還原作業</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="b83e2caeb95bea361704be4e9e795cd1" category="paragraph">API可從取得<block ref="323898002645c2363c910f7c119fd4d6" category="inline-link-rx"></block>。請參閱 <block ref="cf7847f4c926eb96d69d319dfdc23654" category="inline-link-macro-rx"></block> 以取得API總覽。</block>
+  <block id="45ee97ced966affff074d2bc1efe2686" category="paragraph">全新的雲端應用程式備份功能可讓您將現有的Oracle與Microsoft SQL應用程式一致的Snapshot（備份）、從內部部署的主要儲存設備卸載到Amazon S3或Azure Blob的雲端物件儲存設備。</block>
+  <block id="8a0841a62164343a6bb78ffd4349420f" category="inline-link">深入瞭解如何將內部部署應用程式資料保護至雲端</block>
+  <block id="98d0ff36da367aa918057b6c42219851" category="paragraph"><block ref="6ddb7afc666833c3265591e4f4bdc4a7" category="inline-link-rx"></block>。</block>
 </blocks>

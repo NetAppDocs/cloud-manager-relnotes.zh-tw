@@ -272,6 +272,43 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-vm-da
 
 
 
+==== 不需要Cloud Restore執行個體、ONTAP 即可執行瀏覽與還原功能
+
+用於從S3和Blob儲存設備進行檔案層級瀏覽與還原作業時、需要使用獨立的雲端還原執行個體/虛擬機器。此執行個體不使用時會關閉、但還原檔案時仍會增加一些時間和成本。此功能已由免費容器取代、可在需要時部署在Connector上。它具有下列優點：
+
+* 無需增加檔案層級還原作業的成本
+* 加快檔案層級的還原作業
+* 在內部部署安裝Connector時、可支援從雲端瀏覽及還原檔案作業
+
+
+請注意、如果您先前使用Cloud Restore執行個體/ VM、將會自動移除。
+
+
+
+==== 瀏覽及還原Google Cloud和StorageGRID 支援不支援的檔案
+
+新增瀏覽與還原作業的容器（如上所述）之後、現在即可從儲存在Google Cloud和StorageGRID 更新系統中的備份檔案執行檔案還原作業。現在、瀏覽與還原可用於還原所有公有雲供應商和StorageGRID 來自於整個過程的檔案。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-browse-restore["瞭解如何使用Browse & Restore從ONTAP 您的還原備份還原磁碟區和檔案"]。
+
+
+
+==== 拖放以啟用雲端備份至S3儲存設備
+
+如果您的備份Amazon S3目的地是在Canvas上的工作環境、您可以將內部ONTAP 的支援叢集或Cloud Volumes ONTAP 支援系統（安裝於AWS中）拖曳到Amazon S3工作環境、以啟動設定精靈。
+
+
+
+==== 自動將備份原則套用至Kubernetes叢集中新建立的磁碟區
+
+如果您在雲端備份啟動後、將新的持續磁碟區新增至Kubernetes叢集、過去您需要記住為這些磁碟區設定備份。現在、您可以選取要自動套用至新建立磁碟區的原則 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-kubernetes.html#setting-a-backup-policy-to-be-assigned-to-new-volumes["從_備份設定_頁面"] 適用於已啟動Cloud Backup的叢集。
+
+
+
+==== 雲端備份API現在可用於管理備份與還原作業
+
+API可從取得 https://docs.netapp.com/us-en/cloud-manager-automation/cbs/overview.html[]。請參閱 link:api-backup-restore.html["本頁"] 以取得API總覽。
+
+
+
 === 2022年5月2日
 
 
@@ -307,7 +344,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-
 
 ==== Cloud Backup for Applications 1.1.0 SnapCenter （以支援功能為基礎）現已成為正式上市
 
-全新的雲端應用程式備份功能可讓您將現有的Oracle與Microsoft SQL應用程式一致的Snapshot（備份）、從內部部署的主要儲存設備、卸載到AWS S3或Azure Blob的雲端物件儲存設備。
+全新的雲端應用程式備份功能可讓您將現有的Oracle與Microsoft SQL應用程式一致的Snapshot（備份）、從內部部署的主要儲存設備卸載到Amazon S3或Azure Blob的雲端物件儲存設備。
 
 必要時、您可以將這些資料從雲端還原至內部部署。
 
@@ -318,20 +355,6 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-d
 ==== 全新的搜尋與還原功能、可在ONTAP 所有的還原檔案中搜尋磁碟區或檔案
 
 現在、您可以ONTAP 透過*全部的支援檔案*、以部分或完整的Volume名稱、部分或完整的檔案名稱、大小範圍及其他搜尋篩選條件來搜尋Volume或檔案。如果您不確定哪個叢集或磁碟區是資料的來源、這是尋找您要還原資料的絕佳新方法。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore["瞭解如何使用搜尋&還原"]。
-
-
-
-=== 2022年3月3日
-
-
-
-==== 能夠將持續磁碟區從GKE Kubernetes叢集備份到Google Cloud儲存設備
-
-如果您的GKE叢集已安裝NetApp Astra Trident、而且使用Cloud Volumes ONTAP 適用於GCP的功能作為叢集的後端儲存設備、則您可以在Google Cloud儲存設備之間備份及還原持續的磁碟區。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-kubernetes-to-gcp.html["如需詳細資料、請前往此處"]。
-
-
-
-==== 此版本已停止使用Cloud Data Sense掃描雲端備份檔案的試用版功能
 
 
 
