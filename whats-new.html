@@ -481,7 +481,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-13 14:21:33 +0000">06/13/2022</time>
+    <time datetime="2022-06-15 13:57:51 +0000">06/15/2022</time>
     
   
 
@@ -522,6 +522,7 @@
 </li>
 <li><a href="#雲端備份">雲端備份</a>
 <ul class="sectlevel2">
+<li><a href="#2022年6月14日">2022年6月14日</a></li>
 <li><a href="#2022年6月8日">2022年6月8日</a></li>
 <li><a href="#2022年5月2日-2">2022年5月2日</a></li>
 <li><a href="#2022年4月4日">2022年4月4日</a></li>
@@ -907,6 +908,18 @@
 <h2 id="雲端備份">雲端備份</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年6月14日">2022年6月14日</h3>
+<div class="sect3">
+<h4 id="我們新增支援功能可在ontap-無法存取網際網路的站台中備份內部部署的叢集資料">我們新增支援功能、可在ONTAP 無法存取網際網路的站台中備份內部部署的叢集資料</h4>
+<div class="paragraph">
+<p>如果您的內部ONTAP 使用的叢集位於無法存取網際網路的站台、也稱為暗站或離線站台、現在您可以使用Cloud Backup將Volume資料備份到StorageGRID 位於同一個站台的NetApp作業系統。此功能需要Cloud Manager Connector（3.9.19或更新版本）也部署在離線站台。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html">"瞭解如何在離線站台中安裝Connector"</a>。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["瞭解如何在ONTAP 離線網站上備份不只是StorageGRID 資料的功能"]。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月8日">2022年6月8日</h3>
 <div class="sect3">
 <h4 id="適用於虛擬機器的cloud-backup-1-1-0現已上市">適用於虛擬機器的Cloud Backup 1.1.0現已上市</h4>
@@ -936,7 +949,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>請注意、如果您先前使用Cloud Restore執行個體/ VM、將會自動移除。</p>
+<p>請注意、如果您先前使用Cloud Restore執行個體/ VM、將會自動移除。雲端備份程序會每天執行一次、以刪除所有舊的Cloud Restore執行個體。這項變更是完全透明的、不會對您的資料造成任何影響、而且您不會注意到備份或還原工作有任何變更。</p>
 </div>
 </div>
 <div class="sect3">
