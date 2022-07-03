@@ -473,7 +473,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-28 21:30:04 +0000">06/28/2022</time>
+    <time datetime="2022-07-03 16:10:09 +0000">07/03/2022</time>
     
   
 
@@ -485,9 +485,9 @@
 <ul class="sectlevel1">
 <li><a href="#管理功能">管理功能</a>
 <ul class="sectlevel2">
+<li><a href="#2022年7月3日">2022年7月3日</a></li>
 <li><a href="#2022年6月28日">2022年6月28日</a></li>
 <li><a href="#2022年6月7日">2022年6月7日</a></li>
-<li><a href="#2022年5月12日">2022年5月12日</a></li>
 </ul>
 </li>
 <li><a href="#azure-netapp-files">Azure NetApp Files</a>
@@ -528,6 +528,7 @@
 </li>
 <li><a href="#cloud-sync">Cloud Sync</a>
 <ul class="sectlevel2">
+<li><a href="#2022年7月3日-2">2022年7月3日</a></li>
 <li><a href="#2022年6月6日">2022年6月6日</a></li>
 <li><a href="#2022年5月1日">2022年5月1日</a></li>
 <li><a href="#2022年4月3日">2022年4月3日</a></li>
@@ -621,6 +622,71 @@
 <p>本節說明Cloud Manager管理功能的相關新功能：帳戶、連接器、雲端供應商認證等。</p>
 </div>
 <div class="sect2">
+<h3 id="2022年7月3日">2022年7月3日</h3>
+<div class="sect3">
+<h4 id="連接器3-9-20">連接器3.9.20</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>我們推出新的方法、可導覽至Cloud Manager介面不斷增加的功能清單。現在只要將游標放在左側面板上、即可輕鬆找到所有熟悉的Cloud Manager功能。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-navigation.png" alt="顯示Cloud Manager新左側導覽功能表的快照。"></span></p>
+</div>
+</li>
+<li>
+<p>您現在可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。</p>
+<div class="paragraph">
+<p><a href="task-monitor-cm-operations.html">"深入瞭解監控帳戶運作的相關資訊"</a>。</p>
+</div>
+</li>
+<li>
+<p>Cloud Manager現在支援Azure Blob儲存設備和Google Cloud Storage做為工作環境、類似於Amazon S3支援。</p>
+<div class="paragraph">
+<p>在Azure或Google Cloud中安裝Connector之後、Cloud Manager現在會自動探索Azure訂閱中Azure Blob儲存設備的相關資訊、或是在安裝Connector的專案中探索Google Cloud Storage的相關資訊。Cloud Manager會將物件儲存設備顯示為工作環境、您可以開啟以檢視更多詳細資訊。</p>
+</div>
+<div class="paragraph">
+<p>以下是Azure Blob工作環境的範例：</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-azure-blob.png" alt="這是一個快照、顯示Azure Blob工作環境、您可以在其中檢視高層級的總覽、然後查看儲存帳戶的詳細資訊。"></span></p>
+</div>
+</li>
+<li>
+<p>我們重新設計Amazon S3工作環境的資源頁面、提供更詳細的S3儲存區資訊、例如容量、加密詳細資料等。</p>
+</li>
+<li>
+<p>下列Google Cloud區域現在支援Connector：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>馬德里（歐洲-西南1）</p>
+</li>
+<li>
+<p>巴黎（歐洲-西9）</p>
+</li>
+<li>
+<p>華沙（歐洲中心2）</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>現在Azure West US 3區域支援Connector。</p>
+<div class="paragraph">
+<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"檢視支援區域的完整清單"</a></p>
+</div>
+</li>
+<li>
+<p>此版本的Connector也包含Cloud Volumes ONTAP 了一些功能強化功能。</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-july-2022" target="_blank" rel="noopener">"深入瞭Cloud Volumes ONTAP 解功能強化功能"</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月28日">2022年6月28日</h3>
 <div class="sect3">
 <h4 id="使用netapp認證登入">使用NetApp認證登入</h4>
@@ -670,15 +736,6 @@
 </div>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022年5月12日">2022年5月12日</h3>
-<div class="sect3">
-<h4 id="連接器3-9-18修補程式">連接器3.9.18修補程式</h4>
-<div class="paragraph">
-<p>我們更新了Connector、推出錯誤修正。最值得注意的是Cloud Volumes ONTAP 、當Connector位於共享VPC時、會影響到Google Cloud中的功能不均部署。</p>
 </div>
 </div>
 </div>
@@ -1072,6 +1129,81 @@
 <h2 id="cloud-sync">Cloud Sync</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年7月3日-2">2022年7月3日</h3>
+<div class="sect3">
+<h4 id="支援azure-data-lake-storage-gen2">支援Azure Data Lake Storage Gen2</h4>
+<div class="paragraph">
+<p>您現在可以將NFS伺服器或SMB伺服器的資料同步至Azure Data Lake Storage Gen2。</p>
+</div>
+<div class="paragraph">
+<p>建立包含Azure Data Lake的同步關係時、您需要提供Cloud Sync 含有儲存帳戶連線字串的功能。它必須是一般連線字串、而非共用存取簽章（SAS）。</p>
+</div>
+<div class="paragraph">
+<p><a href="reference-supported-relationships.html">"檢視支援的同步關係清單"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="從google-cloud-storage持續同步">從Google Cloud Storage持續同步</h4>
+<div class="paragraph">
+<p>持續同步設定現在可從來源Google Cloud Storage儲存庫支援至雲端儲存目標。</p>
+</div>
+<div class="paragraph">
+<p>初始資料同步之後Cloud Sync 、Syncset會偵聽來源Google Cloud Storage儲存區的變更、並在目標發生時持續同步任何變更。此設定適用於從Google Cloud Storage儲存庫同步至S3、Google Cloud Storage、Azure Blob儲存設備、StorageGRID 不支援或IBM Storage的情況。</p>
+</div>
+<div class="paragraph">
+<p>與您的資料代理人相關聯的服務帳戶需要下列權限才能使用此設定：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">- pubsub.subscriptions.consume
+- pubsub.subscriptions.create
+- pubsub.subscriptions.delete
+- pubsub.subscriptions.list
+- pubsub.topics.attachSubscription
+- pubsub.topics.create
+- pubsub.topics.delete
+- pubsub.topics.list
+- pubsub.topics.setIamPolicy
+- storage.buckets.update</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="task-creating-relationships.html#settings">"深入瞭解Continuous Sync設定"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="新的google-cloud區域支援">新的Google Cloud區域支援</h4>
+<div class="paragraph">
+<p>下列Google Cloud地區現在支援此功能：Cloud Sync</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>哥倫布（美國東部5）</p>
+</li>
+<li>
+<p>達拉斯（美國-南1）</p>
+</li>
+<li>
+<p>馬德里（歐洲-西南1）</p>
+</li>
+<li>
+<p>米蘭（歐洲-西8）</p>
+</li>
+<li>
+<p>巴黎（歐洲-西9）</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="全新google-cloud機器類型">全新Google Cloud機器類型</h4>
+<div class="paragraph">
+<p>Google Cloud中資料代理程式的預設機器類型現在是n2-Standard-4。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月6日">2022年6月6日</h3>
 <div class="sect3">
 <h4 id="持續同步">持續同步</h4>
@@ -1402,7 +1534,7 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="新的google-cloud區域支援">新的Google Cloud區域支援</h4>
+<h4 id="新的google-cloud區域支援-2">新的Google Cloud區域支援</h4>
 <div class="paragraph">
 <p>從9.10.1版開始、下列Google Cloud區域現在支援此功能：Cloud Volumes ONTAP</p>
 </div>
