@@ -86,11 +86,7 @@
   <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">瞭解如何使用搜尋&amp;amp;還原</block>
   <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">現在、您可以ONTAP 透過*全部的支援檔案*、以部分或完整的Volume名稱、部分或完整的檔案名稱、大小範圍及其他搜尋篩選條件來搜尋Volume或檔案。如果您不確定哪個叢集或磁碟區是資料的來源、這是尋找您要還原資料的絕佳新方法。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="section-title">雲端資料感測</block>
-  <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">Data Sense可識別四種新類型的澳洲個人資料</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看Data Sense可在您的資料中識別的所有個人資料類型</block>
-  <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
-  <block id="0387123627dfe002c7435c0101983f19" category="section-title">現在全域Active Directory伺服器可以是LDAP伺服器</block>
-  <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022年3月15日</block>
   <block id="e367efbc26bd12c0d6ae37dd6a55ef9b" category="section-title">Cloud Sync</block>
   <block id="81fb4d1570abd75a1e2945d1f1c9f8cc" category="section-title">2022年5月1日</block>
@@ -437,7 +433,6 @@
   <block id="0a0c24e7fef8cd9bcb19d6db19987b93" category="paragraph">請注意、如果您先前使用Cloud Restore執行個體/ VM、將會自動移除。雲端備份程序會每天執行一次、以刪除所有舊的Cloud Restore執行個體。這項變更是完全透明的、不會對您的資料造成任何影響、而且您不會注意到備份或還原工作有任何變更。</block>
   <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（1.13.1版）</block>
   <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（1.12.1版）</block>
-  <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（版本1.11.1）</block>
   <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（版本1.3.1）</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正問題</block>
   <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">1.3.1版的全域檔案快取Edge軟體可從取得<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。此版本可修正中所述的問題<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
@@ -509,4 +504,19 @@
   <block id="26317664fb1c4e8b3a500a7b1e46a4e7" category="inline-link-macro">安裝及管理Astra Trident</block>
   <block id="74f5fa93248faf352ebad3f966bf3b55" category="paragraph"><block ref="74f5fa93248faf352ebad3f966bf3b55" category="inline-link-macro-rx"></block></block>
   <block id="412d8f1a8f03a7ee8f0983e7ecafe5e4" category="list-text">您現在可以將Kubernetes叢集拖放到AWS FSX for ONTAP the Sfor the Sfor the fernet工作環境中、直接從Canvas.新增儲存類別。</block>
+  <block id="d5b8d2f44acff1b98dd9992401eadf24" category="section-title">2022年7月6日（1.14版）</block>
+  <block id="45b5235b8c737e18e646514c30664517" category="section-title">現在您可以檢視擁有目錄存取權的使用者和群組</block>
+  <block id="949b2765e1f54f21e0cad7eec542e087" category="inline-link">瞭解如何檢視可存取您資料夾和檔案共用的使用者和群組</block>
+  <block id="a90ca4eb6ddb2e74f2c65cdc04cc3fbb" category="paragraph">過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。<block ref="b60fb470aa4bdcc4f286155f14ead62c" category="inline-link-rx"></block>。</block>
+  <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">您可以「暫停」掃描儲存庫、暫時停止掃描特定內容</block>
+  <block id="1c32547b30cc36869742df049964326d" category="inline-link">瞭解如何暫停和繼續掃描</block>
+  <block id="686ab925b6e810c9c0fd8f818fda9d3f" category="paragraph">暫停掃描表示「資料感應」不會針對任何新增或變更的磁碟區或儲存區執行未來掃描、但系統仍會提供所有目前的結果。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
+  <block id="74055d71ba1631fb4f3285d57f607264" category="section-title">美國駕駛人的授權資料來自其他三種狀態、可透過Data Sense識別</block>
+  <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">Data Sense可識別及分類包含來自印第安納州、紐約州和德州的駕駛授權資料的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">原則現在會傳回符合搜尋條件的目錄</block>
+  <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">深入瞭解如何建立原則</block>
+  <block id="108104172f74542ec4477bdc3526c5a6" category="paragraph">過去當您建立自訂原則時、結果會顯示符合搜尋條件的檔案。結果也會顯示符合查詢的目錄（資料夾和檔案共用）。<block ref="15372ef6946b4e16102f5b52608f8748" category="inline-link-rx"></block>。</block>
+  <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">Data Sense現在一次最多可移動100、000個檔案</block>
+  <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">瞭解如何使用Data Sense移動檔案</block>
+  <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
 </blocks>
