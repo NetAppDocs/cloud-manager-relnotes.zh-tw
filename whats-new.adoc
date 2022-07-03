@@ -39,7 +39,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * 您現在可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。
 +
-link:task-monitor-cm-operations.html["深入瞭解監控帳戶運作的相關資訊"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["深入瞭解監控帳戶運作的相關資訊"]。
 
 * Cloud Manager現在支援Azure Blob儲存設備和Google Cloud Storage做為工作環境、類似於Amazon S3支援。
 +
@@ -159,6 +159,20 @@ Cloud Manager可讓您建立、刪除及還原Volume快照。您也可以建立�
 
 
 
+=== 2022年7月3日
+
+* 您現在可以選取單一或多個可用度區域HA部署模式。
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["建立FSX以利ONTAP 不工作環境"]
+
+* Cloud Manager現在支援AWS GovCloud帳戶驗證。
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["設定IAM角色"]
+
+
+
+
+
 === 2022年2月27日
 
 
@@ -184,22 +198,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-set
 ==== 建立Volume時、請選取Volume單位
 
 您可以 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["建立磁碟區時、請選取Volume單位（GiB或TiB）"] FSX ONTAP for Sfor Sf.
-
-
-
-=== 2021年10月4日
-
-
-
-==== 使用Cloud Manager建立CIFS Volume
-
-現在您可以了 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用ONTAP Cloud Manager在FSXF中建立CIFS Volume以供其使用"]。
-
-
-
-==== 使用Cloud Manager編輯Volume
-
-現在您可以了 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes["使用ONTAP Cloud Manager編輯FSXfor Sf2 Volume"]。
 
 
 
@@ -1001,6 +999,20 @@ GFC授權登錄頁面現在會顯示透過NetApp訂閱啟動的授權數量。
 
 
 
+=== 2022年7月3日
+
+* 如果使用Trident營運者部署了Astra Trident、您現在可以使用Cloud Manager升級至最新版的Astra Trident。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["安裝及管理Astra Trident"]
+
+* 您現在可以將Kubernetes叢集拖放到AWS FSX for ONTAP the Sfor the Sfor the fernet工作環境中、直接從Canvas.新增儲存類別。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["新增儲存類別"]
+
+
+
+
+
 === 2022年6月6日
 
 Cloud Manager現在支援Amazon FSX ONTAP 作為後端儲存設備。
@@ -1016,25 +1028,6 @@ Cloud Manager現在支援Amazon FSX ONTAP 作為後端儲存設備。
 您現在可以將Kubernetes叢集拖放到Cloud Volumes ONTAP 運作環境中、直接從Canvas.新增儲存類別。
 
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["新增儲存類別"]
-
-
-
-=== 2022年4月4日
-
-
-
-==== 使用Cloud Manager資源頁面管理Kubernetes叢集
-
-Kubernetes叢集管理現在已直接從叢集工作環境增強整合功能。全新 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["快速入門"] 讓您快速上線運作。
-
-您現在可以從叢集資源頁面執行下列動作。
-
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["安裝Astra Trident"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html["新增儲存類別"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html["檢視持續磁碟區"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html["移除叢集"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html["啟用資料服務"]
-
 
 
 

@@ -52,13 +52,6 @@
   <block id="1b06c7a9314e682b34302ac90d6d6650" category="section-title">建立Volume時、請選取Volume單位</block>
   <block id="155385bf6757f064143eb321fbfd3bff" category="inline-link-macro">建立磁碟區時、請選取Volume單位（GiB或TiB）</block>
   <block id="bdc6d93b4370ea76238df491d9d141c4" category="paragraph">您可以 <block ref="88fc27d29fd6019ad989d255373b75d1" category="inline-link-macro-rx"></block> FSX ONTAP for Sfor Sf.</block>
-  <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021年10月4日</block>
-  <block id="2ac9dc8f932fa4bebfc31724e388e13a" category="section-title">使用Cloud Manager建立CIFS Volume</block>
-  <block id="901f92bd8486511c3943b59dd9b9f6a4" category="inline-link-macro">使用ONTAP Cloud Manager在FSXF中建立CIFS Volume以供其使用</block>
-  <block id="8cb898147f5ef32e49709138a0ee48c6" category="paragraph">現在您可以了 <block ref="98c695f1949c26a2dd10f3c98347e43b" category="inline-link-macro-rx"></block>。</block>
-  <block id="1664cbd7cbe0abbcd6d133e652cd42c1" category="section-title">使用Cloud Manager編輯Volume</block>
-  <block id="7a6930a21ad40feae487321aef61a969" category="inline-link-macro">使用ONTAP Cloud Manager編輯FSXfor Sf2 Volume</block>
-  <block id="b233fccd6a0e80b0628c8b760f808f80" category="paragraph">現在您可以了 <block ref="4f9c429b7c1519954500e41db7985c1c" category="inline-link-macro-rx"></block>。</block>
   <block id="36a9eb77fcf21a931c3ba4a85dff781b" category="section-title">應用程式範本</block>
   <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">2022年3月3日</block>
   <block id="400480e0d45c783abec0a0fffbb005a6" category="section-title">現在您可以建立範本來尋找特定的工作環境</block>
@@ -167,20 +160,6 @@
   <block id="513502857f15915e7acef1b7916eda1b" category="section-title">更新授權登錄頁面。</block>
   <block id="9993afe041a131f763bfa71520f8d27d" category="paragraph">GFC授權登錄頁面現在會顯示透過NetApp訂閱啟動的授權數量。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
-  <block id="ecee73066145d2e6f1b75b79d2af7514" category="section-title">使用Cloud Manager資源頁面管理Kubernetes叢集</block>
-  <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">快速入門</block>
-  <block id="a84f0102d02caeeb1c0e554f032c6e35" category="paragraph">Kubernetes叢集管理現在已直接從叢集工作環境增強整合功能。全新 <block ref="a7ce12c998c9439767584776d325ea5b" category="inline-link-macro-rx"></block> 讓您快速上線運作。</block>
-  <block id="4e9fabf2f81510967e324cfc9c54b640" category="paragraph">您現在可以從叢集資源頁面執行下列動作。</block>
-  <block id="f1fe71442cd08e74d342114df7ee1551" category="inline-link-macro">安裝Astra Trident</block>
-  <block id="b4940c8b54941154dff3675bb279c96f" category="list-text"><block ref="b4940c8b54941154dff3675bb279c96f" category="inline-link-macro-rx"></block></block>
-  <block id="fd0987c679e587c89c7d5551c641f09e" category="inline-link-macro">新增儲存類別</block>
-  <block id="be2f7669a1d3d4dec877a85297de18ec" category="list-text"><block ref="be2f7669a1d3d4dec877a85297de18ec" category="inline-link-macro-rx"></block></block>
-  <block id="260adbf21b473e18ea0788235c9512b8" category="inline-link-macro">檢視持續磁碟區</block>
-  <block id="6a38c17b4adfb6fade3691d6bab9976a" category="list-text"><block ref="6a38c17b4adfb6fade3691d6bab9976a" category="inline-link-macro-rx"></block></block>
-  <block id="f253fdd547a6f5e0e05bbdb671ae8b24" category="inline-link-macro">移除叢集</block>
-  <block id="aa7542e939f8e623254af69a1fcd8e2b" category="list-text"><block ref="aa7542e939f8e623254af69a1fcd8e2b" category="inline-link-macro-rx"></block></block>
-  <block id="41e3782291be693bb1f948094d98229d" category="inline-link-macro">啟用資料服務</block>
-  <block id="6d6f9b61b474cb16598eda49f24d6452" category="list-text"><block ref="6d6f9b61b474cb16598eda49f24d6452" category="inline-link-macro-rx"></block></block>
   <block id="ef1bf4095b622ba80ac24b48b8e45eac" category="section-title">2022年1月11日</block>
   <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="section-title">監控</block>
   <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021年8月1日</block>
@@ -472,7 +451,6 @@
   <block id="fb8e25a66c3a27139d3ea3e1474c7db3" category="inline-image-macro">顯示Cloud Manager新左側導覽功能表的快照。</block>
   <block id="e37234425776295f1624526d17572b8e" category="list-text">您現在可以設定Cloud Manager以電子郵件傳送通知、即使您尚未登入系統、也能得知重要的系統活動。</block>
   <block id="2f439d7fd2d68628b2c40e59bc7ec352" category="inline-link-macro">深入瞭解監控帳戶運作的相關資訊</block>
-  <block id="8fe400bbcf74fee5f6ca96b5d06fd8a8" category="paragraph"><block ref="6207ce0a1413f0c60f2c0a13a1fde26f" category="inline-link-macro-rx"></block>。</block>
   <block id="0f9a1f2b52f5c8456ca5d25ab69eea52" category="list-text">Cloud Manager現在支援Azure Blob儲存設備和Google Cloud Storage做為工作環境、類似於Amazon S3支援。</block>
   <block id="5134e5a3a5a026f57f4938b2eaa07031" category="paragraph">在Azure或Google Cloud中安裝Connector之後、Cloud Manager現在會自動探索Azure訂閱中Azure Blob儲存設備的相關資訊、或是在安裝Connector的專案中探索Google Cloud Storage的相關資訊。Cloud Manager會將物件儲存設備顯示為工作環境、您可以開啟以檢視更多詳細資訊。</block>
   <block id="a2f44a550843ebb8ee7fe06e85e5d378" category="paragraph">以下是Azure Blob工作環境的範例：</block>
@@ -520,4 +498,15 @@
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
   <block id="16d18a6af4e3eb041715aa5c571b4c92" category="paragraph">&lt;stdin&gt;中未解析的指令-包括：https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/_include/whats-new-july-gcp.adoc[leveloffset=+1]</block>
+  <block id="991b7c6e5c5e3b71cf64a28ea679cff0" category="paragraph"><block ref="8b6b603d70c42ac6b5c1db56412efc72" category="inline-link-rx"></block>。</block>
+  <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">您現在可以選取單一或多個可用度區域HA部署模式。</block>
+  <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">建立FSX以利ONTAP 不工作環境</block>
+  <block id="28d4a8073a683a018eec6bfdec63098f" category="paragraph"><block ref="28d4a8073a683a018eec6bfdec63098f" category="inline-link-macro-rx"></block></block>
+  <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">Cloud Manager現在支援AWS GovCloud帳戶驗證。</block>
+  <block id="d8a56d983b91f097e5ba55dd03a18509" category="inline-link-macro">設定IAM角色</block>
+  <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
+  <block id="3b5790878c6505820d5eed0428e827bb" category="list-text">如果使用Trident營運者部署了Astra Trident、您現在可以使用Cloud Manager升級至最新版的Astra Trident。</block>
+  <block id="26317664fb1c4e8b3a500a7b1e46a4e7" category="inline-link-macro">安裝及管理Astra Trident</block>
+  <block id="74f5fa93248faf352ebad3f966bf3b55" category="paragraph"><block ref="74f5fa93248faf352ebad3f966bf3b55" category="inline-link-macro-rx"></block></block>
+  <block id="412d8f1a8f03a7ee8f0983e7ecafe5e4" category="list-text">您現在可以將Kubernetes叢集拖放到AWS FSX for ONTAP the Sfor the Sfor the fernet工作環境中、直接從Canvas.新增儲存類別。</block>
 </blocks>
