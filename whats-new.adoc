@@ -655,6 +655,65 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering
 
 
 
+=== 2022年7月3日
+
+以下是3.9.20版Connector的變更。
+
+
+
+==== 數位錢包
+
+數位錢包現在會顯示您帳戶的總使用容量、以及授權套件的使用容量。這有助於瞭解您的收費方式、以及您是否需要購買額外容量。
+
+image:screenshot-digital-wallet-summary.png["顯示容量型授權的「Digital Wallet」頁面的快照。此頁面概述您帳戶中的已用容量、然後依照授權套件細分已用容量。"]
+
+
+
+==== 彈性磁碟區增強功能
+
+Cloud Manager現在可在Cloud Volumes ONTAP 使用者介面建立運作環境時、支援Amazon EBS Elastic Volumes功能。使用GP3或IO1磁碟時、預設會啟用彈性磁碟區功能。您可以根據儲存需求來選擇初始容量、Cloud Volumes ONTAP 並在部署完畢後加以修改。
+
+link:concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支援"]。
+
+
+
+==== AWS中的SS3授權ONTAP
+
+Cloud Manager現在會自動在ONTAP AWS中執行9.11.0版或更新版本的全新和現有Cloud Volumes ONTAP 的支援系統上安裝支援功能。
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]。
+
+
+
+==== 全新Azure Cloud區域支援
+
+從9.10.1版開始、Cloud Volumes ONTAP 現在Azure West US 3地區支援了整套功能。
+
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
+
+
+
+==== Azure中的SS3授權ONTAP
+
+Cloud Manager現在會自動在ONTAP Azure中執行9.9.1版或更新版本的全新和現有Cloud Volumes ONTAP 的支援系統上安裝支援S3。
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]。
+
+
+
+==== 新的Google Cloud區域支援
+
+從9.10.1版開始、下列Google Cloud區域現在支援此功能：Cloud Volumes ONTAP
+
+* 馬德里（歐洲-西南1）
+* 巴黎（歐洲-西9）
+* 華沙（歐洲中心2）
+
+
+https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
+
+
+
 === 2022年6月7日
 
 以下是3.9.19版本的Connector所做的變更。
@@ -832,26 +891,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 當您選擇要搭配Cloud Volumes ONTAP 使用的Google Cloud服務帳戶時、Cloud Manager現在會顯示與每個服務帳戶相關的電子郵件地址。檢視電子郵件地址可讓您更容易區分共用相同名稱的服務帳戶。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["服務帳戶欄位的快照"]
-
-
-
-=== 2022年4月3日
-
-
-
-==== System Manager連結已移除
-
-我們已移除Cloud Volumes ONTAP 先前可從功能環境中取得的System Manager連結。
-
-您仍可在連線Cloud Volumes ONTAP 至該系統的網頁瀏覽器中輸入叢集管理IP位址、以連線至System Manager。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html["深入瞭解連線至System Manager"]。
-
-
-
-==== WORM儲存設備充電
-
-入門特惠費率已經到期、現在您將需要支付使用WORM儲存設備的費用。根據WORM磁碟區的總配置容量、每小時充電一次。這適用於新的Cloud Volumes ONTAP 和現有的不全系統。
-
-https://cloud.netapp.com/pricing["瞭解WORM儲存設備的定價"^]。
 
 
 
