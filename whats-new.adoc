@@ -665,7 +665,7 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering
 
 數位錢包現在會顯示您帳戶的總使用容量、以及授權套件的使用容量。這有助於瞭解您的收費方式、以及您是否需要購買額外容量。
 
-image:screenshot-digital-wallet-summary.png["顯示容量型授權的「Digital Wallet」頁面的快照。此頁面概述您帳戶中的已用容量、然後依照授權套件細分已用容量。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["顯示容量型授權的「Digital Wallet」頁面的快照。此頁面概述您帳戶中的已用容量、然後依照授權套件細分已用容量。"]
 
 
 
@@ -681,7 +681,7 @@ link:concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支�
 
 Cloud Manager現在會自動在ONTAP AWS中執行9.11.0版或更新版本的全新和現有Cloud Volumes ONTAP 的支援系統上安裝支援功能。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]。
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
 
 
 
@@ -697,20 +697,9 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP
 
 Cloud Manager現在會自動在ONTAP Azure中執行9.9.1版或更新版本的全新和現有Cloud Volumes ONTAP 的支援系統上安裝支援S3。
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]。
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
 
-
-
-==== 新的Google Cloud區域支援
-
-從9.10.1版開始、下列Google Cloud區域現在支援此功能：Cloud Volumes ONTAP
-
-* 馬德里（歐洲-西南1）
-* 巴黎（歐洲-西9）
-* 華沙（歐洲中心2）
-
-
-https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP 支援區域的完整清單以供參閱"^]
+<stdin>中未解析的指令-包括：https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/_include/whats-new-july-gcp.adoc[leveloffset=+1]
 
 
 
