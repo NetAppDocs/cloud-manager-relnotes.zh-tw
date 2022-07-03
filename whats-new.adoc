@@ -695,7 +695,7 @@ link:concept-aws-elastic-volumes.html["深入瞭解AWS對彈性磁碟區的支�
 
 ==== AWS中的SS3授權ONTAP
 
-Cloud Manager現在會自動在ONTAP AWS中執行9.11.0版或更新版本的全新和現有Cloud Volumes ONTAP 的支援系統上安裝支援功能。
+現在AWS中執行9.11.0版或更新版本的全新和現有的版本不含支援的S3授權。ONTAP Cloud Volumes ONTAP
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
 
@@ -711,7 +711,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["檢視Cloud Volumes ONTAP
 
 ==== Azure中的SS3授權ONTAP
 
-Cloud Manager現在會自動在ONTAP Azure中執行9.9.1版或更新版本的全新和現有Cloud Volumes ONTAP 的支援系統上安裝支援S3。
+Azure中執行9.9.1版或更新版本的全新及現有的支援功能系統、現在已隨附一份支援功能S3的授權。ONTAP Cloud Volumes ONTAP
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
 
