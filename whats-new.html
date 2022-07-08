@@ -473,7 +473,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-07-05 16:13:55 +0000">07/05/2022</time>
+    <time datetime="2022-07-08 17:13:38 +0000">07/08/2022</time>
     
   
 
@@ -521,9 +521,9 @@
 </li>
 <li><a href="#雲端資料感測">雲端資料感測</a>
 <ul class="sectlevel2">
+<li><a href="#2022年7月6日1-14版">2022年7月6日（1.14版）</a></li>
 <li><a href="#2022年6月12日1-13-1版">2022年6月12日（1.13.1版）</a></li>
 <li><a href="#2022年5月11日1-12-1版">2022年5月11日（1.12.1版）</a></li>
-<li><a href="#2022年4月5日版本1-11-1">2022年4月5日（版本1.11.1）</a></li>
 </ul>
 </li>
 <li><a href="#cloud-sync">Cloud Sync</a>
@@ -1034,6 +1034,39 @@
 <h2 id="雲端資料感測">雲端資料感測</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年7月6日1-14版">2022年7月6日（1.14版）</h3>
+<div class="sect3">
+<h4 id="現在您可以檢視擁有目錄存取權的使用者和群組">現在您可以檢視擁有目錄存取權的使用者和群組</h4>
+<div class="paragraph">
+<p>過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files-and-directories">"瞭解如何檢視可存取您資料夾和檔案共用的使用者和群組"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="您可以暫停掃描儲存庫暫時停止掃描特定內容">您可以「暫停」掃描儲存庫、暫時停止掃描特定內容</h4>
+<div class="paragraph">
+<p>暫停掃描表示「資料感應」不會針對任何新增或變更的磁碟區或儲存區執行未來掃描、但系統仍會提供所有目前的結果。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository">"瞭解如何暫停和繼續掃描"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="美國駕駛人的授權資料來自其他三種狀態可透過data-sense識別">美國駕駛人的授權資料來自其他三種狀態、可透過Data Sense識別</h4>
+<div class="paragraph">
+<p>Data Sense可識別及分類包含來自印第安納州、紐約州和德州的駕駛授權資料的檔案。 <a href="reference-private-data-categories.html#types-of-personal-data">"查看Data Sense可在您的資料中識別的所有個人資料類型"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="原則現在會傳回符合搜尋條件的目錄">原則現在會傳回符合搜尋條件的目錄</h4>
+<div class="paragraph">
+<p>過去當您建立自訂原則時、結果會顯示符合搜尋條件的檔案。結果也會顯示符合查詢的目錄（資料夾和檔案共用）。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies">"深入瞭解如何建立原則"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="data-sense現在一次最多可移動100000個檔案">Data Sense現在一次最多可移動100、000個檔案</h4>
+<div class="paragraph">
+<p>如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share">"瞭解如何使用Data Sense移動檔案"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月12日1-13-1版">2022年6月12日（1.13.1版）</h3>
 <div class="sect3">
 <h4 id="現在您可以從資料調查頁面下載結果做為-json報告">現在您可以從「資料調查」頁面下載結果、做為.Json報告</h4>
@@ -1109,21 +1142,6 @@
 </div>
 <div class="paragraph">
 <p><a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page">"請參閱所有篩選器清單、以供您調查資料"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022年4月5日版本1-11-1">2022年4月5日（版本1.11.1）</h3>
-<div class="sect3">
-<h4 id="data-sense可識別四種新類型的澳洲個人資料">Data Sense可識別四種新類型的澳洲個人資料</h4>
-<div class="paragraph">
-<p>Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data">"查看Data Sense可在您的資料中識別的所有個人資料類型"</a>。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="現在全域active-directory伺服器可以是ldap伺服器">現在全域Active Directory伺服器可以是LDAP伺服器</h4>
-<div class="paragraph">
-<p>除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html">"如需詳細資料、請前往此處"</a>。</p>
 </div>
 </div>
 </div>
