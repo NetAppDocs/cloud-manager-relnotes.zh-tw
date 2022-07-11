@@ -715,8 +715,6 @@ Azure中執行9.9.1版或更新版本的全新及現有的支援功能系統、�
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務"^]
 
-<stdin>中未解析的指令-包括：https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/_include/whats-new-july-gcp.adoc[leveloffset=+1]
-
 
 
 === 2022年6月7日
