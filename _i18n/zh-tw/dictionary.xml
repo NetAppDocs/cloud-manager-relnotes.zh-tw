@@ -16,8 +16,6 @@
   <block id="898d465c80c6b6783418f6fa71db0946" category="inline-image-macro">服務帳戶欄位的快照</block>
   <block id="bfd761a70b5f9cd277ef7c878344df38" category="paragraph">在單一可用度區域（AZ）中部署HA配對時、現在需要下列權限才能建立AWS分散配置群組：</block>
   <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">現在需要這些權限、才能最佳化Cloud Manager建立放置群組的方式。</block>
-  <block id="eaf263597aafb24c99ce4e16af420ae8" category="inline-link">Cloud Manager 原則頁面</block>
-  <block id="26dd25d183752a9f37249174f3d3ff89" category="paragraph">請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單<block ref="0e92ab1ca454f31f07a6e5fba6519a3a" category="inline-link-rx"></block>。</block>
   <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022年4月3日</block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022年2月27日</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="section-title">Azure NetApp Files</block>
@@ -310,14 +308,7 @@
   <block id="2273c570a2dcacbb1c4bb77abccca54b" category="section-title">License Manager服務增強功能</block>
   <block id="03036f549995f5d3240d1c89c4f2f496" category="paragraph">全域檔案快取授權管理伺服器（LMS）服務已增強、可自動偵測Proxy設定。如此可實現無縫組態。</block>
   <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">2022年6月7日</block>
-  <block id="40beea3ec23a7affa39b1a1cbd52f21d" category="section-title">連接器3.9.19</block>
-  <block id="fb9fefdc512037af8c4c1f84c436bd8e" category="list-text">現在AWS雅加達地區（ap東南3區）支援Connector。</block>
-  <block id="49ed7ab586a5135eae3ee7b3aea2ae20" category="list-text">現在Azure Brazil東南地區支援Connector。</block>
-  <block id="1765dff10197df4bf080f41e5537f2a5" category="list-text">此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">深入瞭Cloud Volumes ONTAP 解功能強化功能</block>
-  <block id="2027473f3ca71543274163d3bb9dd8e1" category="list-text"><block ref="2027473f3ca71543274163d3bb9dd8e1" category="inline-link-rx"></block></block>
-  <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">深入瞭ONTAP 解內部叢集增強功能</block>
-  <block id="f0aff813a70ef2591adfbb6a1a06b553" category="list-text"><block ref="f0aff813a70ef2591adfbb6a1a06b553" category="inline-link-rx"></block></block>
   <block id="35902f649443d8dd6c5f04595fff3035" category="paragraph">如果您在雲端備份啟動後、將新的持續磁碟區新增至Kubernetes叢集、過去您需要記住為這些磁碟區設定備份。現在、您可以選取要自動套用至新建立磁碟區的原則。當為新的Kubernetes叢集啟動Cloud Backup時、此選項可在設定精靈中使用。</block>
   <block id="62ee9336109ed1c4538423613b856682" category="section-title">2022年6月6日</block>
   <block id="c20246791a0594003975011a29aae438" category="section-title">持續同步</block>
@@ -518,4 +509,13 @@
   <block id="f42fcdabb7c9a7075b26292ed8cb7a23" category="section-title">建立ONTAP 適用於不支援的系統的備份原則時、也提供其他功能</block>
   <block id="cd359ec6a578adbdedd6582f88b84401" category="list-text">現在可以按年度排程進行備份。每年備份的預設保留值為1、但如果您想要存取多個前幾年的備份檔案、可以變更此值。</block>
   <block id="42a0fcc08cab0bf2248dfca3aecd8ec9" category="list-text">您可以命名備份原則、以便以更多描述性文字來識別原則。</block>
+  <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
+  <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">原則變更</block>
+  <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">我們在文件中直接新增Cloud Manager原則、以更新文件內容。這表示您現在可以在Cloud Volumes ONTAP 說明如何設定的步驟旁、檢視連接器和右側的必要權限。這些原則先前可從NetApp支援網站的頁面存取。</block>
+  <block id="28f37fc0eb4fe20ff92020d4d8d46b8d" category="inline-link-macro">以下範例顯示用來建立連接器的AWS IAM角色權限</block>
+  <block id="449d304f6ee19f4cd91497b67641d687" category="paragraph"><block ref="2381483aa809d20dc8ed09c651a1b090" category="inline-link-macro-rx"></block>。</block>
+  <block id="49056d93dd3cd3fc9129ebadcf6877e0" category="inline-link-macro">檢視Cloud Manager的權限摘要</block>
+  <block id="289c267aad7151f388f9cb33c2dd25ca" category="paragraph">我們也建立了一個頁面、提供每個原則的連結。 <block ref="95fc2556330780df6dd239853ed18808" category="inline-link-macro-rx"></block>。</block>
+  <block id="63e4eec15ba75260d01771611989182b" category="inline-link">檢視AWS的最新Connector原則</block>
+  <block id="3f5180c6dfc0906c58f04ff000c41a28" category="paragraph">請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。<block ref="68d3de9f2b18269a91b4a95ab6a0f18b" category="inline-link-rx"></block>。</block>
 </blocks>

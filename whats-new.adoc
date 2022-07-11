@@ -27,6 +27,20 @@ summary: 瞭解Cloud Manager平台最新的雲端服務變更。如需詳細資�
 
 
 
+=== 2022年7月15日
+
+
+
+==== 原則變更
+
+我們在文件中直接新增Cloud Manager原則、以更新文件內容。這表示您現在可以在Cloud Volumes ONTAP 說明如何設定的步驟旁、檢視連接器和右側的必要權限。這些原則先前可從NetApp支援網站的頁面存取。
+
+link:task-creating-connectors-aws.html#create-an-iam-policy["以下範例顯示用來建立連接器的AWS IAM角色權限"]。
+
+我們也建立了一個頁面、提供每個原則的連結。 link:reference-permissions.html["檢視Cloud Manager的權限摘要"]。
+
+
+
 === 2022年7月3日
 
 
@@ -81,27 +95,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2
 
 
 NOTE: 使用電子郵件地址和密碼的現有登入必須持續使用該登入方法。「以NetApp登入」選項適用於註冊的新使用者。
-
-
-
-=== 2022年6月7日
-
-
-
-==== 連接器3.9.19
-
-* 現在AWS雅加達地區（ap東南3區）支援Connector。
-* 現在Azure Brazil東南地區支援Connector。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["檢視支援區域的完整清單"^]
-
-* 此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。
-+
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022["深入瞭Cloud Volumes ONTAP 解功能強化功能"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022["深入瞭ONTAP 解內部叢集增強功能"^]
-
-
-
 
 
 
@@ -760,7 +753,7 @@ link:concept-aws-elastic-volumes.html["深入瞭解彈性磁碟區的支援"]。
 "ec2:DescribeVolumesModifications",
 "ec2:ModifyVolume",
 ----
-請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]。
+請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["檢視AWS的最新Connector原則"^]。
 
 
 
@@ -856,7 +849,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 ----
 現在需要這些權限、才能最佳化Cloud Manager建立放置群組的方式。
 
-請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 原則頁面"^]。
+請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["檢視AWS的最新Connector原則"^]。
 
 
 
