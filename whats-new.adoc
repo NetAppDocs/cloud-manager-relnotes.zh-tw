@@ -247,6 +247,30 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年7月13日
+
+
+
+==== 支援已新增至備份SnapLock 支援的支援功能
+
+現在、您可以使用Cloud Backup將SnapLock 非公有雲和私有雲備份到其中。此功能需要ONTAP 您的不知道系統執行ONTAP 的是版本不符合更新版本的版本。不過、目前不支援「符合性」磁碟區。SnapLock
+
+
+
+==== 現在、您可以在使用內部部署Connector時、在公有雲中建立備份檔案
+
+過去、您需要在建立備份檔案的相同雲端供應商中部署Connector。現在、您可以使用部署在內部部署的Connector、從內部ONTAP 部署的支援系統建立備份檔案、以將檔案備份到Amazon S3、Azure Blob和Google Cloud Storage。（在StorageGRID 還原系統上建立備份檔案時、一律需要內部連接器。）
+
+
+
+==== 建立ONTAP 適用於不支援的系統的備份原則時、也提供其他功能
+
+* 現在可以按年度排程進行備份。每年備份的預設保留值為1、但如果您想要存取多個前幾年的備份檔案、可以變更此值。
+* 您可以命名備份原則、以便以更多描述性文字來識別原則。
+
+
+
+
 === 2022年6月14日
 
 
@@ -334,26 +358,6 @@ API可從取得 https://docs.netapp.com/us-en/cloud-manager-automation/cbs/overv
 
 
 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-backup.html["深入瞭解可用的授權模式"]。
-
-
-
-=== 2022年4月4日
-
-
-
-==== Cloud Backup for Applications 1.1.0 SnapCenter （以支援功能為基礎）現已成為正式上市
-
-全新的雲端應用程式備份功能可讓您將現有的Oracle與Microsoft SQL應用程式一致的Snapshot（備份）、從內部部署的主要儲存設備卸載到Amazon S3或Azure Blob的雲端物件儲存設備。
-
-必要時、您可以將這些資料從雲端還原至內部部署。
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-data-to-cloud.html["深入瞭解如何將內部部署應用程式資料保護至雲端"]。
-
-
-
-==== 全新的搜尋與還原功能、可在ONTAP 所有的還原檔案中搜尋磁碟區或檔案
-
-現在、您可以ONTAP 透過*全部的支援檔案*、以部分或完整的Volume名稱、部分或完整的檔案名稱、大小範圍及其他搜尋篩選條件來搜尋Volume或檔案。如果您不確定哪個叢集或磁碟區是資料的來源、這是尋找您要還原資料的絕佳新方法。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore["瞭解如何使用搜尋&還原"]。
 
 
 

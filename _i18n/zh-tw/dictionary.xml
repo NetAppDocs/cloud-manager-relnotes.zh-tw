@@ -80,11 +80,6 @@
   <block id="caf9c5028f987d64131bfc8e9f4bd0ed" category="inline-link">深入瞭解可用的授權模式</block>
   <block id="ecd035ede918d91432ba5203669d96bd" category="paragraph"><block ref="7226e404226609d8e6a7fa892651e74a" category="inline-link-rx"></block>。</block>
   <block id="ad806d4b803a5aa7358400786d14dec0" category="section-title">2022年4月4日</block>
-  <block id="223fdeee6256cb135700ded14acc7574" category="section-title">Cloud Backup for Applications 1.1.0 SnapCenter （以支援功能為基礎）現已成為正式上市</block>
-  <block id="1959411b4282df2234896496da39c42f" category="paragraph">必要時、您可以將這些資料從雲端還原至內部部署。</block>
-  <block id="0749ae9ea79ee87dd8c530f67a9065fe" category="section-title">全新的搜尋與還原功能、可在ONTAP 所有的還原檔案中搜尋磁碟區或檔案</block>
-  <block id="abad9ff4f9967065f50634a2a3606dd0" category="inline-link">瞭解如何使用搜尋&amp;amp;還原</block>
-  <block id="9a4fc48ebf3077bde35f83be2ee84cc8" category="paragraph">現在、您可以ONTAP 透過*全部的支援檔案*、以部分或完整的Volume名稱、部分或完整的檔案名稱、大小範圍及其他搜尋篩選條件來搜尋Volume或檔案。如果您不確定哪個叢集或磁碟區是資料的來源、這是尋找您要還原資料的絕佳新方法。<block ref="f28ab8501300af6839923f7181e075ab" category="inline-link-rx"></block>。</block>
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="section-title">雲端資料感測</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看Data Sense可在您的資料中識別的所有個人資料類型</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022年3月15日</block>
@@ -396,9 +391,6 @@
   <block id="52e2c3fc6fb58a0ca1eb816ca6e270ed" category="section-title">雲端備份API現在可用於管理備份與還原作業</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
   <block id="b83e2caeb95bea361704be4e9e795cd1" category="paragraph">API可從取得<block ref="323898002645c2363c910f7c119fd4d6" category="inline-link-rx"></block>。請參閱 <block ref="cf7847f4c926eb96d69d319dfdc23654" category="inline-link-macro-rx"></block> 以取得API總覽。</block>
-  <block id="45ee97ced966affff074d2bc1efe2686" category="paragraph">全新的雲端應用程式備份功能可讓您將現有的Oracle與Microsoft SQL應用程式一致的Snapshot（備份）、從內部部署的主要儲存設備卸載到Amazon S3或Azure Blob的雲端物件儲存設備。</block>
-  <block id="8a0841a62164343a6bb78ffd4349420f" category="inline-link">深入瞭解如何將內部部署應用程式資料保護至雲端</block>
-  <block id="98d0ff36da367aa918057b6c42219851" category="paragraph"><block ref="6ddb7afc666833c3265591e4f4bdc4a7" category="inline-link-rx"></block>。</block>
   <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
   <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">現在您可以從「資料調查」頁面下載結果、做為.Json報告</block>
   <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">請參閱如何從「資料調查」頁面建立報告</block>
@@ -490,7 +482,6 @@
   <block id="1a3362a1b5304a4e1e1112496974b9ae" category="section-title">Azure中的SS3授權ONTAP</block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
-  <block id="16d18a6af4e3eb041715aa5c571b4c92" category="paragraph">&lt;stdin&gt;中未解析的指令-包括：https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/_include/whats-new-july-gcp.adoc[leveloffset=+1]</block>
   <block id="991b7c6e5c5e3b71cf64a28ea679cff0" category="paragraph"><block ref="8b6b603d70c42ac6b5c1db56412efc72" category="inline-link-rx"></block>。</block>
   <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">您現在可以選取單一或多個可用度區域HA部署模式。</block>
   <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">建立FSX以利ONTAP 不工作環境</block>
@@ -519,4 +510,12 @@
   <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
   <block id="8152540df51584ebf79193211a381d46" category="paragraph">現在AWS中執行9.11.0版或更新版本的全新和現有的版本不含支援的S3授權。ONTAP Cloud Volumes ONTAP</block>
   <block id="f225a4f57ea32da8b983d7bffd20b6eb" category="paragraph">Azure中執行9.9.1版或更新版本的全新及現有的支援功能系統、現在已隨附一份支援功能S3的授權。ONTAP Cloud Volumes ONTAP</block>
+  <block id="02e3f175b6b6db384cc8a9f19dfd8b6a" category="section-title">2022年7月13日</block>
+  <block id="f2c95e400c19071fbcd562467ddc48b3" category="section-title">支援已新增至備份SnapLock 支援的支援功能</block>
+  <block id="e5fff8c021afd86e8d7cd1a5b82dec8e" category="paragraph">現在、您可以使用Cloud Backup將SnapLock 非公有雲和私有雲備份到其中。此功能需要ONTAP 您的不知道系統執行ONTAP 的是版本不符合更新版本的版本。不過、目前不支援「符合性」磁碟區。SnapLock</block>
+  <block id="975ab611b7133feabb2a325e663f8347" category="section-title">現在、您可以在使用內部部署Connector時、在公有雲中建立備份檔案</block>
+  <block id="8d2224260491150c834f946712c069a0" category="paragraph">過去、您需要在建立備份檔案的相同雲端供應商中部署Connector。現在、您可以使用部署在內部部署的Connector、從內部ONTAP 部署的支援系統建立備份檔案、以將檔案備份到Amazon S3、Azure Blob和Google Cloud Storage。（在StorageGRID 還原系統上建立備份檔案時、一律需要內部連接器。）</block>
+  <block id="f42fcdabb7c9a7075b26292ed8cb7a23" category="section-title">建立ONTAP 適用於不支援的系統的備份原則時、也提供其他功能</block>
+  <block id="cd359ec6a578adbdedd6582f88b84401" category="list-text">現在可以按年度排程進行備份。每年備份的預設保留值為1、但如果您想要存取多個前幾年的備份檔案、可以變更此值。</block>
+  <block id="42a0fcc08cab0bf2248dfca3aecd8ec9" category="list-text">您可以命名備份原則、以便以更多描述性文字來識別原則。</block>
 </blocks>
