@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/zh-tw/cloud-manager-relnotes/search.html"
           data-type="widget" 
-          data-placeholder="搜尋文件" 
-          data-no-results-found="找不到符合 {query} 的相關結果。" 
-          data-did-you-mean="搜尋 {suggestion}。" 
-          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
-          data-results-found="找到 {hitCount} 筆結果"  
+          data-placeholder="搜尋文件"
+          data-no-results-found="找不到符合 {query} 的相關結果。"
+          data-did-you-mean="搜尋 {suggestion}。"
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？"
+          data-results-found="找到 {hitCount} 筆結果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -473,7 +475,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-07-11 22:18:00 +0000">07/11/2022</time>
+    <time datetime="2022-07-13 13:17:40 +0000">07/13/2022</time>
     
   
 
@@ -513,10 +515,10 @@
 </li>
 <li><a href="#雲端備份">雲端備份</a>
 <ul class="sectlevel2">
+<li><a href="#2022年7月13日">2022年7月13日</a></li>
 <li><a href="#2022年6月14日">2022年6月14日</a></li>
 <li><a href="#2022年6月8日">2022年6月8日</a></li>
 <li><a href="#2022年5月2日">2022年5月2日</a></li>
-<li><a href="#2022年4月4日">2022年4月4日</a></li>
 </ul>
 </li>
 <li><a href="#雲端資料感測">雲端資料感測</a>
@@ -537,7 +539,7 @@
 <li><a href="#雲端分層">雲端分層</a>
 <ul class="sectlevel2">
 <li><a href="#2022年5月3日">2022年5月3日</a></li>
-<li><a href="#2022年4月4日-2">2022年4月4日</a></li>
+<li><a href="#2022年4月4日">2022年4月4日</a></li>
 <li><a href="#2021年9月2日">2021年9月2日</a></li>
 </ul>
 </li>
@@ -901,6 +903,34 @@
 <h2 id="雲端備份">雲端備份</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="2022年7月13日">2022年7月13日</h3>
+<div class="sect3">
+<h4 id="支援已新增至備份snaplock-支援的支援功能">支援已新增至備份SnapLock 支援的支援功能</h4>
+<div class="paragraph">
+<p>現在、您可以使用Cloud Backup將SnapLock 非公有雲和私有雲備份到其中。此功能需要ONTAP 您的不知道系統執行ONTAP 的是版本不符合更新版本的版本。不過、目前不支援「符合性」磁碟區。SnapLock</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="現在您可以在使用內部部署connector時在公有雲中建立備份檔案">現在、您可以在使用內部部署Connector時、在公有雲中建立備份檔案</h4>
+<div class="paragraph">
+<p>過去、您需要在建立備份檔案的相同雲端供應商中部署Connector。現在、您可以使用部署在內部部署的Connector、從內部ONTAP 部署的支援系統建立備份檔案、以將檔案備份到Amazon S3、Azure Blob和Google Cloud Storage。（在StorageGRID 還原系統上建立備份檔案時、一律需要內部連接器。）</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="建立ontap-適用於不支援的系統的備份原則時也提供其他功能">建立ONTAP 適用於不支援的系統的備份原則時、也提供其他功能</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>現在可以按年度排程進行備份。每年備份的預設保留值為1、但如果您想要存取多個前幾年的備份檔案、可以變更此值。</p>
+</li>
+<li>
+<p>您可以命名備份原則、以便以更多描述性文字來識別原則。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="2022年6月14日">2022年6月14日</h3>
 <div class="sect3">
 <h4 id="我們新增支援功能可在ontap-無法存取網際網路的站台中備份內部部署的叢集資料">我們新增支援功能、可在ONTAP 無法存取網際網路的站台中備份內部部署的叢集資料</h4>
@@ -1004,27 +1034,6 @@
 </div>
 <div class="paragraph">
 <p><a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-backup.html">"深入瞭解可用的授權模式"</a>。</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022年4月4日">2022年4月4日</h3>
-<div class="sect3">
-<h4 id="cloud-backup-for-applications-1-1-0-snapcenter-以支援功能為基礎現已成為正式上市">Cloud Backup for Applications 1.1.0 SnapCenter （以支援功能為基礎）現已成為正式上市</h4>
-<div class="paragraph">
-<p>全新的雲端應用程式備份功能可讓您將現有的Oracle與Microsoft SQL應用程式一致的Snapshot（備份）、從內部部署的主要儲存設備卸載到Amazon S3或Azure Blob的雲端物件儲存設備。</p>
-</div>
-<div class="paragraph">
-<p>必要時、您可以將這些資料從雲端還原至內部部署。</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-app-data-to-cloud.html">"深入瞭解如何將內部部署應用程式資料保護至雲端"</a>。</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="全新的搜尋與還原功能可在ontap-所有的還原檔案中搜尋磁碟區或檔案">全新的搜尋與還原功能、可在ONTAP 所有的還原檔案中搜尋磁碟區或檔案</h4>
-<div class="paragraph">
-<p>現在、您可以ONTAP 透過*全部的支援檔案*、以部分或完整的Volume名稱、部分或完整的檔案名稱、大小範圍及其他搜尋篩選條件來搜尋Volume或檔案。如果您不確定哪個叢集或磁碟區是資料的來源、這是尋找您要還原資料的絕佳新方法。 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore">"瞭解如何使用搜尋&amp;還原"</a>。</p>
 </div>
 </div>
 </div>
@@ -1353,7 +1362,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="2022年4月4日-2">2022年4月4日</h3>
+<h3 id="2022年4月4日">2022年4月4日</h3>
 <div class="sect3">
 <h4 id="amazon-s3-glacier立即擷取儲存類別現已推出">Amazon S3 Glacier立即擷取儲存類別現已推出</h4>
 <div class="paragraph">
