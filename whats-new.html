@@ -475,7 +475,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-07-13 13:17:40 +0000">07/13/2022</time>
+    <time datetime="2022-07-15 22:33:24 +0000">07/15/2022</time>
     
   
 
@@ -487,9 +487,9 @@
 <ul class="sectlevel1">
 <li><a href="#管理功能">管理功能</a>
 <ul class="sectlevel2">
+<li><a href="#2022年7月15日">2022年7月15日</a></li>
 <li><a href="#2022年7月3日">2022年7月3日</a></li>
 <li><a href="#2022年6月28日">2022年6月28日</a></li>
-<li><a href="#2022年6月7日">2022年6月7日</a></li>
 </ul>
 </li>
 <li><a href="#azure-netapp-files">Azure NetApp Files</a>
@@ -546,7 +546,7 @@
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
 <ul class="sectlevel2">
 <li><a href="#2022年7月3日-4">2022年7月3日</a></li>
-<li><a href="#2022年6月7日-2">2022年6月7日</a></li>
+<li><a href="#2022年6月7日">2022年6月7日</a></li>
 <li><a href="#2022年5月2日-2">2022年5月2日</a></li>
 </ul>
 </li>
@@ -585,7 +585,7 @@
 </li>
 <li><a href="#內部-ontap-部署的叢集">內部 ONTAP 部署的叢集</a>
 <ul class="sectlevel2">
-<li><a href="#2022年6月7日-3">2022年6月7日</a></li>
+<li><a href="#2022年6月7日-2">2022年6月7日</a></li>
 <li><a href="#2022年2月27日-2">2022年2月27日</a></li>
 <li><a href="#2022年1月11日">2022年1月11日</a></li>
 </ul>
@@ -622,6 +622,21 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>本節說明Cloud Manager管理功能的相關新功能：帳戶、連接器、雲端供應商認證等。</p>
+</div>
+<div class="sect2">
+<h3 id="2022年7月15日">2022年7月15日</h3>
+<div class="sect3">
+<h4 id="原則變更">原則變更</h4>
+<div class="paragraph">
+<p>我們在文件中直接新增Cloud Manager原則、以更新文件內容。這表示您現在可以在Cloud Volumes ONTAP 說明如何設定的步驟旁、檢視連接器和右側的必要權限。這些原則先前可從NetApp支援網站的頁面存取。</p>
+</div>
+<div class="paragraph">
+<p><a href="task-creating-connectors-aws.html#create-an-iam-policy">"以下範例顯示用來建立連接器的AWS IAM角色權限"</a>。</p>
+</div>
+<div class="paragraph">
+<p>我們也建立了一個頁面、提供每個原則的連結。 <a href="reference-permissions.html">"檢視Cloud Manager的權限摘要"</a>。</p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="2022年7月3日">2022年7月3日</h3>
@@ -706,38 +721,6 @@
 </td>
 </tr>
 </table>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2022年6月7日">2022年6月7日</h3>
-<div class="sect3">
-<h4 id="連接器3-9-19">連接器3.9.19</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>現在AWS雅加達地區（ap東南3區）支援Connector。</p>
-</li>
-<li>
-<p>現在Azure Brazil東南地區支援Connector。</p>
-<div class="paragraph">
-<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"檢視支援區域的完整清單"</a></p>
-</div>
-</li>
-<li>
-<p>此版本的Connector也包含Cloud Volumes ONTAP 了加強功能的功能、以及內部ONTAP 的叢集增強功能。</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022" target="_blank" rel="noopener">"深入瞭Cloud Volumes ONTAP 解功能強化功能"</a></p>
-</li>
-<li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022" target="_blank" rel="noopener">"深入瞭ONTAP 解內部叢集增強功能"</a></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -1451,7 +1434,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="2022年6月7日-2">2022年6月7日</h3>
+<h3 id="2022年6月7日">2022年6月7日</h3>
 <div class="paragraph">
 <p>以下是3.9.19版本的Connector所做的變更。</p>
 </div>
@@ -1497,7 +1480,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p>請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單 <a href="https://mysupport.netapp.com/site/info/cloud-manager-policies" target="_blank" rel="noopener">"Cloud Manager 原則頁面"</a>。</p>
+<p>請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html" target="_blank" rel="noopener">"檢視AWS的最新Connector原則"</a>。</p>
 </div>
 </div>
 <div class="sect3">
@@ -1612,7 +1595,7 @@
 <p>現在需要這些權限、才能最佳化Cloud Manager建立放置群組的方式。</p>
 </div>
 <div class="paragraph">
-<p>請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。您可以在上找到最新的權限清單 <a href="https://mysupport.netapp.com/site/info/cloud-manager-policies" target="_blank" rel="noopener">"Cloud Manager 原則頁面"</a>。</p>
+<p>請務必為您新增至Cloud Manager的每組AWS認證資料提供這些權限。 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html" target="_blank" rel="noopener">"檢視AWS的最新Connector原則"</a>。</p>
 </div>
 </div>
 <div class="sect3">
@@ -1895,7 +1878,7 @@
 <h2 id="內部-ontap-部署的叢集">內部 ONTAP 部署的叢集</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="2022年6月7日-3">2022年6月7日</h3>
+<h3 id="2022年6月7日-2">2022年6月7日</h3>
 <div class="paragraph">
 <p>以下變更是在版本3.9.19的Connector中提出的。</p>
 </div>
